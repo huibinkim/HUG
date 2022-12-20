@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>바텀팝업 노티</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes" /> 	
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<script src="../../js/jquery-3.5.1.min.js"></script>
+	</head>
+	<body>		
+		<div class="page-wrapper">
+			<div class="footer">
+				<button type="button" class="btn btn-float btn-primary" onclick="LayerPopup.openBtm('pop02');">다음</button>				
+			</div>
+
+		</div>
+	
+
+		<!-- 바텀팝업 노티타입 -->
+		<section class="layerpop pop02 pop-btm" role="dialog" aria-hidden="true">
+			<div class="pop-wrap">			
+				<h3 class="blind">일부보증 안내 팝업</h3>
+				<button type="button" class="pop-close" onclick="LayerPopup.closeBtm('pop02');">닫기</button>
+				<div class="pop-content">
+					<div class="pc-wrap type-noti">
+						<h4 class="ptit">일부보증 안내</h4>
+						<div class="ptxt sc-y">
+							<p>일부보증 신청 시 전세목적물이 전세가 미만으로 낙찰되어 손실이 발생하는 경우 전세보증금 중 보증에 가입하지 않은 금액 비율만큼 손실을 부담할 수 있습니다.</p>
+							<p><em class="fc-blue">예시)</em><br> 전세보증금 1억원, 보증가입 7천만원, 전세목적물 낙찰가격 9천만원</p>
+							<p>&rarr; 임차인 회수금액 97백만원 = 손실금액 1천만원(1억원 &minus; 낙찰가격 9천만원) &times; 70%(보증가입금액 7천만원 / 전세보증금 1억원) &plus; 낙찰가격 9천만원</p>														
+							
+						</div>
+
+					</div>
+					<div class="btn-wrap">	
+						<button type="button" class="btn btn-md btn-type03">확 인</button>	
+					</div>
+
+				</div>
+			</div>
+			</section>
+		
+		<script src="../../js/common_ui.js"></script>
+	</body>
+</html>

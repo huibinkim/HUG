@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* =================================== guide =================================== */
+.guide-wrap{padding:40px 20px 100px;}
+.guide-wrap h2.gTit{margin-bottom:20px;font-weight:700;font-size:30px;color:#666;text-align:center}
+.guide-wrap h2.gTit > em{color:#00a1e3;font-weight:inherit;font-size:inherit;}
+.guide-wrap h3.gTit{margin:40px 0 20px;border-top:1px solid #ddd;padding-top:40px;font-size:25px;font-weight:700;color:#000;}
+.guide-wrap h2 + h3,
+.guide-wrap h2 + .gTxt{margin-top:20px !important;}
+.guide-wrap h4.gTit{margin:35px 0 20px;font-size:20px;font-weight:700;color:#000;}
+.guide-wrap h5.gTit{margin:10px 0 5px;font-size:16px;font-weight:500;}
+
+.guide-wrap .gTxt{padding:0 0 20px 0;}
+.guide-wrap .gTxt + .gTxt{margin-top:-10px;}
+.guide-wrap .gTxt:before{content:'※ ';}
+
+.gbtnGotop{position:fixed;z-index:10000;bottom:10px;right:10px;display:inline-block !important;width:46px !important;height:46px;background-color:#2199f5 !important;color:#fff !important;font-size:13px !important;line-height:46px !important;text-align:center !important;border-radius:50% !important;box-sizing:border-box !important;}
+.btnGotop{display:none !important;}
+
+.guide-wrap .btn-group~.btn-group{margin-top:5px}
+.guide-wrap > [class^='common-'] + [class^='common-']{margin-top:5px}
+.guide-wrap .date-term span+.common-input{margin-top:0}

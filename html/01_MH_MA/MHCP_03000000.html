@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>안심진단 평가하기</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<script src="../../js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        
+    
+        <!-- layerpop : 안심진단 평가하기 -->
+        <section class="layerpop pop01 pop-page addr-pop" role="dialog" aria-hidden="true">
+            <div class="pop-wrap">
+                <div class="pop-content">
+                    <div class="pc-wrap type-page">
+                        <div class="header auto-hide">
+                            <h1 class="title ta-c">안심진단 평가하기</h1>
+                            
+                            <div class="btn-right">
+                                <button type="button" class="pop-close" onclick="LayerPopup.close('pop01');">닫기</button>
+                            </div>
+                        </div>
+    
+                        <div class="pp-body type-pd0 sc-y mt-50">
+    
+                            <!-- S: 검색 -->
+                            <div class="content-group pb-0">
+                                <div class="inner-20">
+
+                                    <ul>
+                                        <li>
+                                            <div class="txt-wrap">
+                                                <p class="txt type03">
+                                                    1. 조회하신 시세의 정확도에 대해서 만족하시나요?
+                                                </p>
+                                            </div>
+        
+                                            <div class="star-rating-wrap">
+                                                <input type="radio" id="star05" name="rating" value="5" />
+                                                <label for="star05" class="star"><span class="blind">별 5개</span></label>
+        
+                                                <input type="radio" id="star04" name="rating" value="4" />
+                                                <label for="star04" class="star"><span class="blind">별 4개</span></label>
+        
+                                                <input type="radio" id="star03" name="rating" value="3" />
+                                                <label for="star03" class="star"><span class="blind">별 3개</span></label>
+        
+                                                <input type="radio" id="star02" name="rating" value="2" />
+                                                <label for="star02" class="star"><span class="blind">별 2개</span></label>
+        
+                                                <input type="radio" id="star01" name="rating" value="1" />
+                                                <label for="star01" class="star"><span class="blind">별 1개</span></label>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="txt-wrap">
+                                                <p class="txt type03">
+                                                    2. 진단하신 결과에 대해서 만족하시나요?
+                                                </p>
+                                            </div>
+        
+                                            <div class="star-rating-wrap">
+                                                <input type="radio" id="star05_2" name="rating2" value="5" />
+                                                <label for="star05_2" class="star"><span class="blind">별 5개</span></label>
+        
+                                                <input type="radio" id="star04_2" name="rating2" value="4" />
+                                                <label for="star04_2" class="star"><span class="blind">별 4개</span></label>
+        
+                                                <input type="radio" id="star03_2" name="rating2" value="3" />
+                                                <label for="star03_2" class="star"><span class="blind">별 3개</span></label>
+        
+                                                <input type="radio" id="star02_2" name="rating2" value="2" />
+                                                <label for="star02_2" class="star"><span class="blind">별 2개</span></label>
+        
+                                                <input type="radio" id="star01_2" name="rating2" value="1" />
+                                                <label for="star01_2" class="star"><span class="blind">별 1개</span></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- E: 검색 -->
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-float btn-cancel" onclick="LayerPopup.close('pop01');">닫기</button>
+                        <button type="button" class="btn btn-float btn-primary">확인</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- //layerpop : 주소검색 -->
+
+        
+    </div>
+
+    
+
+	<script type="text/javascript">
+		//<![CDATA[ 
+		$(function () {
+            
+            LayerPopup.open('pop01');
+		});
+		//]]>
+	</script>
+
+	<script src="../../js/common_ui.js"></script>
+</body>
+
+</html>

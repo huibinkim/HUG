@@ -1,0 +1,28 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="62" height="51" viewBox="0 0 62 51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #444;
+        stroke-width: 6px;
+      }
+
+      .cls-1, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #444;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M4464.01,1403.01h52a2,2,0,0,1,2,2v40a1.993,1.993,0,0,1-2,2h-52a2,2,0,0,1-2-2v-40A2.006,2.006,0,0,1,4464.01,1403.01Z" transform="translate(-4459 -1399)"/>
+  <rect id="사각형_3" data-name="사각형 3" class="cls-2" x="17" y="19" width="6" height="6"/>
+  <rect id="사각형_3-2" data-name="사각형 3" class="cls-2" x="28" y="19" width="6" height="6"/>
+  <rect id="사각형_3-3" data-name="사각형 3" class="cls-2" x="39" y="19" width="6" height="6"/>
+  <rect id="사각형_3-4" data-name="사각형 3" class="cls-2" x="17" y="30" width="6" height="6"/>
+  <rect id="사각형_3-5" data-name="사각형 3" class="cls-2" x="28" y="30" width="6" height="6"/>
+  <rect id="사각형_3-6" data-name="사각형 3" class="cls-2" x="39" y="30" width="6" height="6"/>
+  <path class="cls-3" d="M4472.99,1399h4a1,1,0,0,1,1,1v12a1,1,0,0,1-1,1h-4a1,1,0,0,1-1-1v-12A1,1,0,0,1,4472.99,1399Z" transform="translate(-4459 -1399)"/>
+  <rect id="Rectangle_5_copy" data-name="Rectangle 5 copy" class="cls-2" x="43" width="6" height="14" rx="1" ry="1"/>
+</svg>

@@ -1,0 +1,23 @@
+- images
+/images/sub/img_submn01.png
+/images/sub/img_submn02.png
+/images/sub/icon_relax01.png
+/images/sub/icon_relax02.png
+/images/sub/icon_relax03.png
+/images/sub/icon_relax04.png
+/images/main/main_guide_type03.png
+/images/sub/icon_help.png
+/images/sub/icon_warning.png
+/images/sub/icon_star.png
+/images/sub/icon_star.svg
+/images/sub/icon_star_off.png
+/images/sub/icon_star_off.svg
+
+-css
+/css/common.css 기존 소스에 작업하여 주석 안심전세로 검색 후 추가 부탁드립니다.
+/css/relax.css 안심전세에만 적용되는 스타일
+
+* 퍼블리싱 리스트는 guide.html 확인 부탁드립니다.
+
+
+

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>form 스타일가이드</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../html/_guide/guide.css"><!-- 가이드 전용 css -->
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <a href="#" class="gbtnGotop">TOP</a>
+    <div class="guide-wrap">
+        <h2 class="gTit"><em>F</em>orm</h2>
+        <h3 class="gTit">Checkbox</h3>
+        <h4 class="gTit">1. 기본(.common-check)</h4>
+        <div class="common-check">
+            <label>
+                <input type="checkbox" name="item1">
+                <span>checkbox 접근성 미체크</span>
+            </label>
+        </div>
+        <div class="common-check">
+            <label>
+                <input type="checkbox" name="item01" checked>
+                <span>checkbox 체크</span>
+            </label>
+        </div>
+        <div class="common-check">
+            <label>
+                <input type="checkbox" name="item1" disabled>
+                <span>checkbox 비활성</span>
+            </label>
+        </div>
+        <div class="common-check">
+            <label>
+                <input type="checkbox" name="item001" disabled checked>
+                <span>checkbox 비활성 체크</span>
+            </label>
+        </div>
+
+        <h4 class="gTit">2. 리스트(.common-check.chk-list)</h4>
+        <div class="common-check chk-list">           
+            <label>
+                <input type="checkbox" name="item1">
+                <span>
+                    체크박스리스트
+                </span>
+            </label>
+            <label>
+                <input type="checkbox" name="item1">
+                <span>
+                    체크박스리스트
+                </span>
+            </label>
+        </div>
+        <div class="common-check accessble">
+            <label>
+                <input type="checkbox" name="item1">
+                <span>
+                    체크박스리스트
+                </span>
+            </label>
+            <a href="javascript:;" class="btn btn-ico ico-help02"><span class="blind">도움말 보기</span></a>
+        </div>      
+        <h4 class="gTit">3. 안내체크(.common-check.type-noti-chk)</h4>
+        <div class="common-check type-noti-chk">
+            <label>
+                <input type="checkbox" name="item1">
+                <span>checkbox</span>
+            </label>
+            <label>
+                <input type="checkbox" name="item1">
+                <span>checkbox</span>
+            </label>
+        </div>
+        <p class="mt-5"></p>
+        <div class="common-check type-noti-chk">
+            <label>
+                <input type="checkbox" name="item1" checked>
+                <span>checkbox(checked) </span>
+            </label>
+        </div>
+        <p class="mt-5"></p>
+        <div class="common-check type-noti-chk">
+            <label>
+                <input type="checkbox" name="item1" disabled>
+                <span>checkbox(disabled) </span>
+            </label>
+        </div>
+        <p class="mt-5"></p>
+        <div class="common-check type-noti-chk">
+            <label>
+                <input type="checkbox" name="item1" disabled checked>
+                <span>checkbox(disabled checked) </span>
+            </label>
+        </div>
+
+        <h3 class="gTit">Radio</h3>
+        <h4 class="gTit">1. 기본(.common-radio)</h4>
+        <div class="common-radio" >
+            <label>
+                <input type="radio" name="rdo1">
+                <span>라디오</span>
+            </label>
+            <label>
+                <input type="radio" name="rdo1" checked>
+                <span>라디오</span>
+            </label>
+        </div>
+
+        <div class="common-radio mt-10">
+            <label>
+                <input type="radio" name="rdo2" disabled>
+                <span>라디오</span>
+            </label>
+            <label>
+                <input type="radio" name="rdo2" checked disabled>
+                <span>라디오</span>
+            </label>
+        </div>
+
+        <h4 class="gTit">2. 리스트()</h4>
+
+        <h4 class="gTit">3. 버튼타입(.common-radio.rdo-btn01)</h4>
+        <div class="common-radio rdo-btn01" role="radiogroup">
+            <label role="radio">
+                <input type="radio" name="rdo3" checked="" aria-hidden="true">
+                <span>라디오</span>
+            </label>
+            <label role="radio">
+                <input type="radio" name="rdo3" aria-hidden="true">
+                <span>라디오</span>
+            </label>
+        </div>
+
+        <h3 class="gTit">Input Text</h3>
+        <h4 class="gTit">1. 기본(.common-input)</h4>
+        <div class="common-input">
+            <label for="frmName" class="blind">입력</label>
+            <input type="text" id="frmName" name="item2" title="입력" value="" placeholder="입력해주세요" />
+        </div>
+
+        <h4 class="gTit">2. error(.common-input.ipt-error)</h4>
+        <div class="common-input ipt-error">
+            <input type="text" id="frmPhone" name="item2" title="이메일 주소 입력" value="hug@hug.com" placeholder="" />
+        </div>
+        <span class="noti-info03">* 이메일 형식에 맞게 입력해주세요.</span>
+
+        <h4 class="gTit">3. readonly</h4>
+        <div class="common-input">
+            <label for="frmName" class="blind">입력</label>
+            <input type="text" id="frmName" name="item2" title="입력" value="Text" placeholder="입력해주세요"
+                readonly="readonly">
+        </div>
+
+        <h4 class="gTit">4. disabled</h4>
+        <div class="common-input">
+            <label for="frmName" class="blind">입력</label>
+            <input type="text" id="frmName" name="item2" title="입력" value="Text" placeholder="입력해주세요"
+                disabled="disabled">
+        </div>
+
+        <h4 class="gTit">5. Type</h4>
+        <h5 class="gTit">- Label + Input</h5>
+        <div class="form-box">
+            <div class="frm-tit">
+                <label for="frmName" class="ico-rf">이름</label>
+            </div>
+            <div class="frm-form">
+                <div class="common-input">
+                    <input type="text" id="frmName" name="item2" title="이름을 입력해주세요." value="이허그"
+                        placeholder="이름을 입력해주세요." />
+                </div>
+            </div>
+        </div>
+        <h5 class="gTit mt-20">- Label Num + Input</h5>
+        <div class="form-box">
+            <div class="frm-tit">
+                <label for="frmName"><em class="num">1</em> 이름</label>
+            </div>
+            <div class="frm-form">
+                <div class="common-input">
+                    <input type="text" id="frmName" name="item2" title="이름 입력해주세요." value="이허그"
+                        placeholder="이름을 입력해주세요." />
+                </div>
+            </div>
+        </div>
+        <h5 class="gTit mt-20">- Unit</h5>
+        <div class="form-box">
+            <!-- 평형(전용면적) -->
+            <div class="frm-tit">
+                <label for="frmArea">평형(전용면적)</label>
+            </div>
+            <div class="frm-form">
+                <div class="common-input type-unit">
+                    <input type="tel" class="ta-r" id="frmArea" name="item2" title="평형(전용면적) 입력" value=""
+                        placeholder="숫자만 입력" />
+                    <em>㎡</em>
+                </div>
+                <span class="noti-info"><em>23.88</em> 평</span>
+            </div>
+        </div>
+        <div class="form-box">
+            <!-- 전세보증금 -->
+            <div class="frm-tit">
+                <label for="frmArea">전세보증금</label>
+            </div>
+            <div class="frm-form">
+                <div class="common-input type-unit">
+                    <input type="tel" class="ta-r" id="frmArea" name="item2" title="전세보증금을 입력해 주세요." value=""
+                        placeholder="전세보증금을 입력해 주세요." />
+                    <em>원</em>
+                </div>
+                <span class="noti-info"><em>1억 3천만</em> 원</span>
+            </div>
+        </div>
+        <h5 class="gTit mt-20">- 날짜</h5>
+        <div class="form-box">
+            <!-- 날짜 -->
+            <div class="frm-tit">
+                <label for="frmDate">날짜</label>
+            </div>
+            <div class="frm-form">
+                <div class="common-input type-date">
+                    <input type="date" id="frmDate" name="item2" title="날짜 입력" data-placeholder="날짜를 입력해주세요" required
+                        aria-required="true" />
+                </div>
+            </div>
+        </div>
+        <h5 class="gTit mt-20">- 검색</h5>
+        <div class="form-box">
+            <!-- 검색 -->
+            <div class="frm-form">
+                <div class="common-input type-search">
+                    <input type="text" name="item2" title="검색어 입력" placeholder="검색어를 입력하세요." />
+                    <button type="button" class="btn-ico"><span class="blind">검색</span></button>
+                </div>
+            </div>
+
+            <div class="frm-tit mt-10">
+                <label for="btn">검색버튼, btm레이어가 올라온다</label>
+            </div>
+            <div class="frm-form">
+                <button type="button" id="btn" onclick="LayerPopup.openBtm('pop-search')" class="box-type-btn">검색</button>
+            </div>
+        </div>
+
+        <h5 class="gTit mt-20">- Pin번호입력</h5>
+        <div class="form-box">
+            <!-- Pin번호 -->
+            <div class="frm-form">
+                <div class="frm-pin mt-20">
+                    <label for="pin" class="blind">핀번호</label>
+                    <input type="text" data-type="number" id="pin" maxlength="7" oninput="pinChk(this);" class="secret"
+                        pattern="[0-9]*" inputmode="numeric">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="gTit">Select</h3>
+        <h4 class="gTit">1. 기본(.common-combo)</h4>
+        <div class="common-combo">
+            <select title="주거형태 선택">
+                <option value="">선택</option>
+                <option value="">다가구</option>
+                <option disabled="disabled">[disabled] 다가구</option>
+            </select>
+        </div>
+        <div class="common-combo on">
+            <select title="주거형태 선택">
+                <option value="">.common-combo.on</option>
+                <option value="">다가구</option>
+                <option disabled="disabled">[disabled] 다가구</option>
+            </select>
+        </div>
+        <div class="common-combo">
+            <select title="주거형태 선택" disabled>
+                <option value="">disabled</option>
+                <option value="">다가구</option>
+                <option disabled="disabled">[disabled] 다가구</option>
+            </select>
+        </div>
+        <h4 class="gTit">2. 레이어</h4>
+        <div class="form-wrap">
+            <div class="form-box">
+                <!-- 할인혜택 -->
+                <div class="frm-form">
+                    <div class="select-box">
+                        <a href="javascript:;" class="selbox-selitem ellipsis" data-selbox="selBoxSale"
+                            title="할인혜택 선택 팝업열림" tabindex="-1">할인혜택을 선택하세요</a>
+                        <input type="hidden" class="selbox-value" value="" title="할인혜택 선택 내용">
+                        <div class="selbox-itemlist" id="selBoxSale" data-default="선택해주세요.">
+                            <h4 class="selbox-tit blind">할인혜택 선택 팝업</h4>
+                            <div class="selbox-list">
+                                <ul class="selbox-item">
+                                    <li>
+                                        <button type="button" class="item on ellipsis" data-value="임대차계약 전자계약">임대차계약
+                                            전자계약 <span class="flag-sale">3% 할인</span></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="item" data-value="청년가구">청년가구 <span
+                                                class="flag-sale">3% 할인</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="gTit">3. error(.combo-error)</h4>
+        <div class="common-combo combo-error">
+            <select title="주거형태 선택">
+                <option value="">선택</option>
+                <option value="">다가구</option>
+            </select>
+        </div>
+        <span class="noti-info03">* 주거유형을 선택해주세요</span>
+
+        <h4 class="gTit">3. 탭 타입</h4>
+        <div class="form-box">
+            <div class="frm-tit">
+                <label for="frmArea">사고사유</label>
+            </div>
+            <div class="frm-form">
+                <div class="common-combo ipt-error">
+                    <select title="사고사유 선택" onchange="viewInfo(this.value);" role="tablist">
+                        <option value="">선택해주세요.</option>
+                        <option value="itm01" selected id="opt01" role="tab" aria-selected="true"
+                            aria-controls="tabpanel_1">계약종료 후 1개월 내 미지급</option>
+                        <option value="itm02" id="opt02" role="tab" aria-selected="false" aria-controls="tabpanel_2">
+                            전세계약 중 경공매 실시</option>
+                    </select>
+                </div>
+                <script>
+                    function viewInfo(itm) {
+                        var select_itm = $('.sel-change-wrap').children('.' + itm);
+                        select_itm.siblings().hide();
+                        select_itm.show();
+                    }
+                </script>
+                <div class="sel-change-wrap mt-10">
+                    <div class="sel-item itm01 bg-guide-wrap" role="tabpanel" id="tabpanel_1" aria-labelledby="opt01">
+                        <h6 class="blind">계약종료 후 1개월 내 미지급 관련 약관</h6>
+                        <p class="tit">약관 제6조제1항제1호</p>
+                        <p class="txt">전세계약 종료 후 1개월 내 정당한 사유 없이 전세보증금을 되돌려 받지 못한 경우</p>
+                    </div>
+                    <div class="sel-item itm02 bg-guide-wrap" style="display:none" role="tabpanel" id="tabpanel_2"
+                        aria-labelledby="opt02">
+                        <h6 class="blind">전세계약 중 경공매 실시 관련 약관</h6>
+                        <p class="tit">약관 제6조제1항제2호</p>
+                        <p class="txt">전세계약 중 경공매가 실시되어 전세보증금을 되돌려받지 못한 경우</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="gTit">4. 상단 구분 타입</h4>
+        <div class="common-combo type-sm">
+            <select title="검색결과 구분 선택">
+                <option value="">정확도순</option>
+                <option value="">도로명 포함</option>
+            </select>
+        </div>
+
+        <h3 class="gTit">Textarea</h3>
+        <div class="form-box">
+            <!-- Textarea -->
+            <div class="frm-tit">
+                <label for="frmTA">Textarea</label>
+            </div>
+            <div class="frm-form">
+                <div class="common-txtarea">
+                    <textarea id="frmTA" placeholder="Textarea 입력해주세요." title="Textarea 입력"></textarea>
+                    <textarea id="frmTA" placeholder="Textarea 입력해주세요." title="Textarea 입력" disabled></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-box">
+            <!-- Textarea -->
+            <div class="frm-tit">
+                <label for="frmTA">Textarea</label>
+            </div>
+            <div class="frm-form txt-error">
+                <div class="common-txtarea">
+                    <textarea id="frmTA" placeholder="Textarea 입력해주세요." title="Textarea 입력"></textarea>
+                </div>
+                <span class="noti-info03">* 내용을 입력해주세요</span>
+            </div>
+        </div>
+
+        <h3 class="gTit">Group</h3>
+        <div class="form-wrap">
+            <div class="form-box">
+                <!-- Input + Button -->
+                <div class="frm-tit">
+                    <label for="frmAccName">Input + Button</label>
+                </div>
+                <div class="frm-form">
+                    <div class="common-group type-btn">
+                        <div class="common-input">
+                            <input type="text" id="frmAccName" name="item2" title="입력" value="" placeholder="입력해주세요." />
+                        </div>
+                        <button type="button" class="btn btn-lg btn-type01"><span>버튼 확인</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-box">
+                <!-- 주민등록번호 NEW -->
+                <div class="frm-tit">
+                    <label for="juminNum1">주민등록번호</label>
+                </div>
+                <div class="frm-form">
+                    <div class="common-group type-jm">
+                        <div class="common-input">
+                            <input type="tel" id="juminNum1" name="item2" title="앞 6자리 입력" value=""
+                                placeholder="앞 6자리 입력" maxlength="6" />
+                            <span>-</span>
+                            <input type="tel" id="juminNum1_2" name="item2" title="뒤 7자리 입력" value=""
+                                placeholder="뒤 7자리 입력" maxlength="7" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-box">
+                <!-- 주민등록번호 뒷자리만 disabled /readonly -->
+                <div class="frm-tit">
+                    <label for="juminNum1">주민등록번호</label>
+                </div>
+                <div class="frm-form">
+                    <div class="common-group type-jm disabled">
+                        <div class="common-input">
+                            <input type="tel" id="juminNum1" name="item2" title="앞 6자리 입력" value="460755"
+                                placeholder="앞 6자리 입력" maxlength="6" />
+                            <span>-</span>
+                            <input type="tel" id="juminNum1_2" name="item2" title="뒤 7자리 입력" value="●●●●●●●"
+                                placeholder="뒤 7자리 입력" maxlength="7" disabled />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-box">
+                <!-- 주민등록번호 disabled /readonly -->
+                <div class="frm-tit">
+                    <label for="juminNum1">주민등록번호</label>
+                </div>
+                <div class="frm-form">
+                    <div class="common-group type-jm disabled">
+                        <div class="common-input">
+                            <input type="tel" id="juminNum1" name="item2" title="앞 6자리 입력" value="460755"
+                                placeholder="앞 6자리 입력" maxlength="6" disabled />
+                            <span>-</span>
+                            <input type="tel" id="juminNum1_2" name="item2" title="뒤 7자리 입력" value="●●●●●●●"
+                                placeholder="뒤 7자리 입력" maxlength="7" disabled />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <!-- 주민등록번호 오류  -->
+                <div class="frm-tit">
+                    <label for="juminNum2">주민등록번호</label>
+                </div>
+                <div class="frm-form">
+                    <div class="common-group type-jm">
+                        <div class="common-input ipt-error">
+                            <input type="tel" id="juminNum2" name="item22" title="앞 6자리 입력" value=""
+                                placeholder="앞 6자리 입력" maxlength="6" />
+                            <span>-</span>
+                            <input type="tel" id="juminNum2_2" name="item22" title="뒤 7자리 입력" value="●●●●●●●"
+                                maxlength="7" />
+                        </div>
+                        <span class="noti-info03">* 주민등록번호를 입력해주세요.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box">
+                <div class="frm-tit">
+                    <label for="frmAddr1">주소</label>
+                </div>
+                <div class="frm-form">
+                    <div class="common-group type-addr">
+                        <div class="common-input addr1">
+                            <input type="text" id="frmAddr1" name="item2" title="주소 입력" value="" placeholder="" />
+                            <button type="button" class="btn btn-lg btn-type01"><span>주소찾기</span></button>
+                        </div>
+                        <div class="common-input addr2">
+                            <label for="frmAddr2" class="blind">주소 추가</label>
+                            <input type="text" id="frmAddr2" name="item2" title="주소 추가 입력" value="" placeholder="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-box">
+                <!-- 임대사업자번호 -->
+                <div class="frm-tit">
+                    <label>임대사업자번호</label>
+                </div>
+                <div class="frm-form">
+                    <div class="common-group type-rent flex">
+                        <div class="common-input rnum-01">
+                            <input type="tel" id="frmRNum1" name="item2" title="임대사업자번호 입력" value="" placeholder="0000"
+                                maxlength="4" />
+                        </div>
+                        <div class="common-combo rnum-area">
+                            <select title="지역구 선택">
+                                <option value="">선택</option>
+                                <option value="">서초구</option>
+                            </select>
+                        </div>
+                        <div class="common-input rnum-02">
+                            <label for="frmRNum2">임대사업자</label>
+                            <input type="tel" id="frmRNum2" name="item2" title="임대사업자번호 입력" value="" placeholder="000"
+                                maxlength="3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-box">
+                <!-- 동/호수 -->
+                <div class="frm-tit">
+                    <label>동/호수</label>
+                </div>
+                <div class="frm-form">
+                    <div class="common-group type-flex flex">
+                        <div class="common-input type-unit">
+                            <input type="tel" class="ta-r" id="frmArea" name="item2" title="동 입력" value=""
+                                placeholder="" />
+                            <em>동</em>
+                        </div>
+                        <div class="common-input type-unit">
+                            <input type="tel" class="ta-r" id="frmArea" name="item2" title="호 입력" value=""
+                                placeholder="" />
+                            <em>호</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- //guide-wrap -->
+    <script src="../../js/common_ui.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>공통팝업</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes" /> 	
+		<link rel="stylesheet" type="text/css" href="../../css/common.css">
+		<script src="../../js/jquery-3.5.1.min.js"></script>
+	</head>
+	<body>
+		<div class="page-wrapper">						
+
+			<div class="container">
+				<h2 class="">공통팝업</h2>	
+				
+				<div class="inner-20">
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<button type="button" class="btn btn-lg btn-type01 mt-20" onclick="LayerPopup.open('pop01', this);" id="confirm">Confirm</button>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<button type="button" class="btn btn-lg btn-type01 mt-20" onclick="LayerPopup.open('pop02', this);" id="alert">alert</button>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<p>엔터 엔터</p>
+					<button type="button" class="btn btn-lg btn-type01 mt-20" onclick="LayerPopup.open('pop03', this);" id="alert-info">alert-안내</button>
+				</div>
+			</div>
+			<div class="footer auto-hide">
+				<button type="button" class="btn btn-float btn-primary">다음</button>				
+			</div>
+		</div>
+
+		<!-- 공통팝업 -->
+		<section class="layerpop pop01 pop-alert" role="alert" aria-hidden="true">
+			<div class="pop-wrap">
+				<h3 class="blind">팝업</h3>
+				<div class="pop-content">
+					<div class="pc-wrap">						
+						<p class="pc-tit"><strong>이허그</strong> 님께서는<br>현재 전세보증급반환보증 가입중입니다.</p>
+						<p class="pc-msg">증액, 감액, 임대인 변경 등<br>중요한 변동사항이 있으시면 보증변경 메뉴를 이용해주세요.</p>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn-float btn-cancel" onclick="LayerPopup.close('pop01');">닫기</button>	
+						<button type="button" class="btn btn-float btn-primary">나의 보증 확인</button>	
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- 공통팝업 -->
+		<section class="layerpop pop02 pop-alert" role="alert" aria-hidden="true">
+			<div class="pop-wrap">			
+				<h3 class="blind">팝업</h3>
+				<div class="pop-content">
+					<div class="pc-wrap">						
+						<p class="pc-tit">인증되었습니다.</p>
+					</div>
+					<div class="btn-group">	
+						<button type="button" class="btn btn-float btn-primary" onclick="LayerPopup.close('pop02');">확인</button>	
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- 공통팝업 -->
+		<section class="layerpop pop03 pop-alert" role="alert" aria-hidden="true">
+			<div class="pop-wrap">			
+				<h3 class="blind">팝업</h3>
+				<div class="pop-content">
+					<div class="pc-wrap">						
+						<p class="pc-tit">생체정보인증으로 로그인한 고객은
+							신규가입/변경/갱신/해지/이행청구 등의
+							업무를 진행하실 때 공동인증서로
+							한 번 더 로그인하셔야 합니다.</p>
+					</div>
+					<div class="btn-group">	
+						<button type="button" class="btn btn-float btn-primary" onclick="LayerPopup.close('pop03');">확인</button>	
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<script src="../../js/common_ui.js"></script>
+	</body>
+</html>

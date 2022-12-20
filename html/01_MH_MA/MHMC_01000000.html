@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>상담 안내 및 상담자 확인</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<script src="../../js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <header class="header auto-hide">
+            <div class="btn-left">
+                <a href="javascript:history.go(-1);" class="btn-ico btn-back" role="button" aria-label="이전"><span class="blind">뒤로</span></a>
+            </div>
+            <h1 class="title">상담 안내 및 상담자 확인</h1>
+            <div class="btn-right">
+                <!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
+                <a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu"><span class="blind">전체메뉴</span></a>
+            </div>
+        </header>
+    
+        <!-- s:본문시작 -->
+        <div class="container">
+            <h2 class="blind">상담 안내 및 상담자 확인 본문</h2>
+            <div class="content-group pb-30 mb-30">
+                <div class="inner-20">
+    
+                    <div class="txt-wrap">
+                        <h3 class="tit">상담 안내</h3>
+                        <p class="txt type03">
+                            1:1 법률상담은 주택도시보증공사의 자문 변호사와 전세계약 등 임대차 관련 상담을 해드리는 서비스이며 무료로 제공됩니다.
+                            <br><br>
+                            상담 답변은 변호사 개인적 견해로 우리 공사는 실제사항에 대해 어떠한 권한도 행사할 수 없으므로 참고용으로 활용하시기 바랍니다.
+                            <br><br>
+                            원활한 상담을 위해 1인당 일 1건(월 3건)의 상담만 등록 가능합니다.
+                            <br><br>
+                            질의 내용에 따라 상담이 제한 될 수 있으니 양해 부탁드립니다. 상담 관련 주요 제한 사유를 숙지하신 후 상담 부탁드립니다.
+                        </p>
+                    </div>
+    
+                    <div class="consult-noti-wrap">
+                        <h3 class="tit">[주요 상담 제한 사유]</h3>
+                        <ul>
+                            <li>1. 전∙월세 계약 및 임대보증금 미반환 사기와 관련 없는 질의</li>
+                            <li>
+                                2. 개인이 아닌 각종 단체의 질의(행정기관, 공법인, 대기업∙중소기업, 재건축조합, 노동조합, 입주자대표회의, 아파트∙상가∙집합건문관리소, 종중, 사단법인, 재단법인)
+                            </li>
+                            <li>3. 행정기관∙법원의 처분 및 판결결과 등에 대한 탄원성 질의</li>
+                            <li>4. 단순히 사실관계만 기재하는 등 질문의 취지가 파악되지 않는 질의, 내용이 지나치게 짧아 답변에 필요한 최소한의 분량에 미치지 못하는 질의</li>
+                            <li>5. 구체적 법적 문제의 해결을 위한 것이 아닌 단순 학리적해석을 구하는 질의</li>
+                            <li>6. 수사기관의 수사가 진행 중인 사안∙행정기관 및 법원에 계속중인 사안에 대하여, 처분 또는 판결내용에 대한 예상 등을 구하거나 일반적인 대응 방안에 대한 질의</li>
+                            <li>7. 관할 시∙군∙구청, 경찰청, 검찰청, 관할법원 및 기타 주무관청 등에 문의함이 타당한 질의(단순 실무상 절차∙구비서류 등에 대한 질의, 공단의 소관사항이 아닌 사안에 대한 질의 등</li>
+                            <li>8. 강제집행면탈, 조세포탈 등 반사회질서에 해당하는 질의</li>
+                            <li>
+                                9. 기타 법률상담의 운영 취지상답변이 부적절하다고 판단되는 내용의 질의 <br>
+                                <span>[예시 1] 법률서면(민사소장, 고소장, 배상명령신청서, 각종 계약서 등)의 작성을 요구 등</span>
+                                <span>[예시 2] 법령∙정관∙내규 등의 유권해석을 구하는 질의</span>
+                                <span>[예시 3] 법리적인 검토가 어려운 사실적∙단순 절차적 사항에 관한 질의</span>
+                                <span>[예시 4] 구체적∙개인적인 법률문제가 아닌 업무의 처리를 위한 질의</span>
+                                <span>[예시5] 변호사∙회계사∙법무사 등의 수임료에 대한 질의</span>
+                            </li>
+                        </ul>
+                    </div>
+    
+    
+                    <!-- s:상담자 정보 입력 -->
+                    <div class="form-wrap">
+                        <div class="txt-wrap">
+                            <h4 class="tit">상담자 정보 입력</h4>
+                        </div>
+                        <div class="form-box">
+                            <div class="frm-tit">
+                                <label for="frmPhone">휴대폰번호</label>
+                            </div>
+                            <div class="frm-form">
+                                <div class="common-input">
+                                    <input type="tel" id="frmPhone" name="item2" title="휴대전화번호를 입력해주세요." value="010-1234-5678" placeholder="휴대전화번호를 입력해주세요." maxlength="11" pattern="[0-9]*" inputmode="numeric" disabled="">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="txt-wrap">
+                            <p class="txt mt-10">
+                                상담 답변은 이력하신 이메일로 송부되오니 정확한 이메일 주소를 입력해 주시기 바랍니다. 마이페이지에서 기본 이메일를 변경 할 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- //e:상담자 정보 입력 -->
+    
+    
+                    <!-- s:정보제공 동의 -->
+                    <div class="txt-wrap mt-40">
+                        <h3 class="tit">정보제공 동의</h3>
+                    </div>
+
+                    <div class="agree-wrap">
+                        <ul>
+                            <li>
+                                <div class="tit">
+                                    <a href="" title="개인정보제공동의">
+                                        [필수] 개인정보제공 동의
+                                        <div class="arrow"><span class="blind">보러가기</span></div>
+                                    </a>
+                                </div>
+                                <div class="cont ta-r">
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo1">
+                                            <span>동의하지 않음</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="rdo1" checked="">
+                                            <span>동의함</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tit">
+                                    <a href="" title="전자거래약관 동의">
+                                        [필수] 전자거래약관 동의
+                                        <div class="arrow"><span class="blind">보러가기</span></div>
+                                    </a>
+                                </div>
+                                <div class="cont ta-r">
+                                    <div class="common-radio">
+                                        <label>
+                                            <input type="radio" name="rdo2">
+                                            <span>동의하지 않음</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="rdo2" checked="">
+                                            <span>동의함</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="common-radio all-chk ta-r">
+                            <label>
+                                <input type="radio" name="rdo3">
+                                <span>모두 동의하지 않음</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="rdo3" checked="">
+                                <span>모두 동의함</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- //e:정보제공 동의 -->
+    
+                </div>
+            </div>
+        </div>
+        <!-- //e:본문시작 -->
+    
+        <div class="footer auto-hide footer-up">		
+            <button type="button" class="btn btn-float btn-primary bg-green">확인</button>				
+        </div>
+    </div>
+
+
+	<script src="../../js/common_ui.js"></script>
+</body>
+
+</html>

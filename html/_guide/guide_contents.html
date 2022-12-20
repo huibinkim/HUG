@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>contents 스타일가이드</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../html/_guide/guide.css"><!-- 가이드 전용 css -->
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <a href="#" class="gbtnGotop">TOP</a>
+    <div class="guide-wrap">
+        <h2 class="gTit"><em>C</em>ontents</h2>
+
+        <h3 class="gTit">Font</h3>
+
+        <h4 class="gTit">기본 (font size 13px)</h4>
+        <p style="font-weight:100;">[한글/영문] Noto Sans KR Thin 노토산스 Thin / [숫자] Roboto +-0123456789</p>
+        <p style="font-weight:300;">[한글/영문] Noto Sans KR Light 노토산스 라이트 / [숫자] Roboto +-0123456789</p>
+        <p style="font-weight:400;">[한글/영문] Noto Sans KR Regular 노토산스 레귤러 / [숫자] Roboto +-0123456789</p>
+        <p style="font-weight:500;">[한글/영문] Noto Sans KR Medium 노토산스 미디움 / [숫자] Roboto +-0123456789</p>
+        <p style="font-weight:700;">[한글/영문] Noto Sans KR Bold 노토산스 볼드 / [숫자] Roboto +-0123456789</p>
+        <p style="font-weight:900;">[한글/영문] Noto Sans KR Black 노토산스 블랙 / [숫자] Roboto +-0123456789</p>
+
+        <h3 class="gTit">특수문자</h3>
+        <div>
+            !@#$%^&*()_+
+        </div>
+        <div>
+            &amp; <br>
+            &frac14; <br>
+            &frac12; <br>
+            &rarr; <br>
+            &middot; <br>
+            &quot; <br>
+            &lt; <br>
+            &gt; <br>
+        </div>
+
+        <h3 class="gTit">Title (h2, h3, h4, h5)</h3>
+        <span>- 500 / 18px / #000 </span>
+        <h3 class="tit-type01">타이틀 (.tit-type01)</h3>
+        <p class="mt-10"></p>
+        <span>- 500 / 15px / #333 </span>
+        <h3 class="tit-type02">타이틀 (.tit-type02)</h3>
+        <h4 class="tit-type02">타이틀 <span class="fc-red">강조</span> 입니다.</h4>
+        <h4 class="tit-type02 sty2">아래에 선 있는 타이틀 (.tit-type02.sty2)</h4>
+        <p class="mt-10"></p>
+        <span>- 500 / 20px / #000 </span>
+        <h3 class="tit-type02">타이틀 (.tit-type03)</h3>
+        <p class="mt-20"></p>
+        <span>- 700 / 22px / #000 </span>
+        <h3 class="tit-visual type01"><span><strong><em>비주얼타이틀</em></strong><br>(.tit-visual.type01)</span></h3>
+        <div class="tit-wrap center-top">
+            <h3 class="tit-type01">가운데 정렬 타이틀</h3>
+        </div>
+
+        <div class="mt-20"></div>
+
+        <h3 class="gTit">안내 </h3>
+        <div class="noti-wrap">
+            <p class="noti-info"><em>안내</em> (.noti-info)</p>
+            <span>- 400 / 15px / #333, - 400 / 15px / #1c75bc</span>
+            <p class="mt-10"></p>
+            <p class="noti-info02">안내 (.noti-info02) <span>- 300 / 13px / #333</span></p>
+
+            <p class="mt-10"></p>
+            <p class="noti-info03">안내 (.noti-info03) <span>- 300 / 13px / #e5483d</span></p>
+            <p class="mt-10"></p>
+            <p class="noti-info04">안내 (.noti-info04) <span>- 300 / 13px / #777</span></p>
+            <p class="noti-info04">안내 <a href="javascript:;" class="noti-link">링크 (.noti-link)</a> (.noti-info04)</p>
+            <p class="mt-10"></p>
+            <p class="noti-info05">안내 (.noti-info05) <span>- 400 / 15px / #e5483d</span></p>
+            <p class="mt-10"></p>
+            <p class="noti-info06">안내 (.noti-info06) <span>- 300 / 13px / #61829a</span></p>
+            <p class="mt-10"></p>
+            <p class="noti-info07">안내 (.noti-info07) <span>- 300 / 13px / #009edb</span></p>
+        </div>
+
+        <h3 class="gTit">안내 - 목록</h3>
+        <h4 class="gTit">1. 기본 Dot 타입</h4>
+        <div class="noti-list-wrap">
+            <h6 class="tit">안내 서브 타이틀</h6>
+            <ul>
+                <li><em>[ul]</em>안내 text <em>강조 text</em></li>
+                <li>안내 text
+                    <div class="noti-list-wrap sub-list">
+                        <ul class="ol-num">
+                            <li><span class="no">1.</span>안내 text<br>안내 text</li>
+                            <li><span class="no">2.</span>안내 text</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>안내 text</li>
+            </ul>
+        </div>
+        <div class="noti-wrap">
+            <p class="noti-txt"><em>[p]</em> 단건안내 - dot type</p>
+        </div>
+        <h4 class="gTit">2. 참조 타입</h4>
+        <div class="noti-list-wrap">
+            <ul class="ref">
+                <li><em>[ul.ref]</em>안내 text <em>강조 text</em></li>
+                <li>안내 text</li>
+            </ul>
+        </div>
+        <div class="noti-wrap">
+            <p class="noti-txt ref"><em>[p.ref]</em> 단건안내 - ref type</p>
+        </div>
+        <h4 class="gTit">3. 숫자 타입</h4>
+        <div class="noti-list-wrap">
+            <ul class="ol-num">
+                <li><span class="no">1.</span>안내 text<br>안내 text</li>
+                <li><span class="no">2.</span>안내 text <em>강조 text</em></li>
+            </ul>
+        </div>
+        <h4 class="gTit">4. Bar 타입</h4>
+        <div class="noti-list-wrap">
+            <ul class="bar">
+                <li><em>[ul.bar]</em>안내 text <em>강조 text</em></li>
+                <li>안내 text</li>
+            </ul>
+        </div>
+        <div class="noti-wrap">
+            <p class="noti-txt bar"><em>[p.bar]</em> 단건안내 - bar type</p>
+        </div>
+        <h4 class="gTit">5. 예외 타입</h4>
+        <div class="excp-guide-wrap">
+            <h5 class="tit-ref">예외사항</h5>
+            <div class="noti-list-wrap">
+                <ul class="ol-num">
+                    <li><span class="no">1.</span>전세목적물이 공사에 신탁되었거나 공사가 1순위 우선수익권자인 경우</li>
+                    <li><span class="no">2.</span>경락 등으로 임차권이 이미 소멸된 경우</li>
+                    <li><span class="no">3.</span>주택임대차보호법의 적용대상이 아닌 법인임차인인 경우</li>
+                </ul>
+            </div>
+        </div>
+
+        <h4 class="gTit">6. 불릿 없는 타입</h4>
+        <div class="noti-list-wrap">
+            <ul class="no-bul">
+                <li>(1)에 해당되는 사고사유일 경우
+                    <p class="noti-txt bar">전세계약이 해지 또는 종료되었음을 증명하는 서류</p>
+                </li>
+                <li>(2)에 해당되는 사고사유일 경우
+                    <p class="noti-txt bar">배당표 등 전세보증금 중 미수령액을 증명하는 서류</p>
+                </li>
+            </ul>
+        </div>
+        <h4 class="gTit">7. 불릿 없는 타입 - 제목 강조</h4>
+        <div class="noti-list-wrap">
+            <ul class="no-bul em-tit">
+                <li>
+                    <p class="tit"><span class="no">Step 1.</span> (1)에 해당되는 사고사유일 경우</p>
+                    <p class="txt">전세계약이 해지 또는 종료되었음을 증명하는 서류</p>
+                </li>
+                <li>
+                    <p class="tit">(1)에 해당되는 사고사유일 경우</p>
+                    <p class="txt">배당표 등 전세보증금 중 미수령액을 증명하는 서류</p>
+                </li>
+            </ul>
+        </div>
+
+        <h3 class="gTit">안내 - 이미지타입</h3>
+        <h4 class="tit-type01">어떤 사유로 신청할 수 있나요 ?</h4>
+        <div class="que-guide-wrap">
+            <ul>
+                <li class="type-L">
+                    <span class="num">1</span>
+                    <span class="que-txt"><strong class="line-b"><em>정당한 사유 없이</em></strong> 전세보증금을 못 받았어요.</span>
+                </li>
+                <li class="type-R">
+                    <span class="num">2</span>
+                    <span class="que-txt">살고 있는 집이 <strong class="line-g"><em>경매</em></strong>에 넘어갔어요.</span>
+                </li>
+            </ul>
+        </div>
+        <p class="mt-30"></p>
+        <h4 class="tit-type01">임대보증금보증사고란 ?</h4>
+        <div class="que-guide-wrap">
+            <ul>
+                <li class="type-L type02">
+                    <span class="num">1</span>
+                    <span class="que-txt">주채무자가 <strong class="line-b"><em>파산</em></strong>했어요!</span>
+                </li>
+                <li class="type-R type02">
+                    <span class="num">2</span>
+                    <span class="que-txt">임대차계약 기간 중 경매 또는 공매가 실시되어 <strong class="line-g"><em>임대보증금을 되돌려 줄 수 없는
+                                경우</em></strong></span>
+                </li>
+                <li class="type-L type03">
+                    <span class="num">3</span>
+                    <span class="que-txt">보증기간에 주채무자가 파산등의 이유로 <strong class="line-y"><em>반환채무를 이행할 수 없을
+                                경우</em></strong></span>
+                </li>
+            </ul>
+        </div>
+
+        <h3 class="gTit">안내 - 스텝타입</h3>
+        <h4 class="gTit">1. Type 1</h4>
+        <h4 class="tit-type01">이행절차가 궁금해요</h4>
+        <div class="step-guide-wrap">
+            <ol>
+                <li>
+                    <em>01</em>
+                    <strong class="tit">보증사고발생</strong>
+                    <p class="txt">보증채권자가 영업점에 통지</p>
+                </li>
+                <li>
+                    <em>02</em>
+                    <strong class="tit">이행청구</strong>
+                    <div class="noti-list-wrap">
+                        <ul class="bar">
+                            <li>보증채무이행청구서 등 제출<br>
+                                (영업점 방문 또는 온라인제출)</li>
+                            <li>주택임차권등기명령을 마친 후 이행청구 가능</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <em>03</em>
+                    <strong class="tit">이행심사</strong>
+                    <div class="noti-list-wrap">
+                        <ul class="bar">
+                            <li>이행청구의 적정성 확인</li>
+                            <li>심사결과 통지(이행여부,금액 등)</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <em>04</em>
+                    <strong class="tit">대위변제<br>
+                        (보증이행청구일 이후 1개월 이내)</strong>
+                    <div class="noti-list-wrap">
+                        <ul class="bar">
+                            <li>대위변제증서 등 제출</li>
+                            <li>명도(집을 비워줌)를 완료해야 이행금액 수령가능</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <h4 class="gTit">2. Type 2</h4>
+        <div class="step-guide-wrap type02 mt-30">
+            <ol>
+                <li>
+                    <em>1</em>
+                    <p class="txt">PC에서 주택도시보증공사(<span class="link">www.khug.or.kr</span>) 접속 후 <strong>인증센터 &gt; 공동인증서
+                            내보내기</strong> 를 선택하세요.</p>
+                </li>
+                <li>
+                    <em>2</em>
+                    <p class="txt"><strong>&apos;공동인증서 내보내기&apos;</strong> 버튼을 클릭해 사용하실 인증서를 선택하고 인증서 비밀번호 입력 후
+                        <strong>&apos;확인&apos;</strong> 버튼을 클릭하세요.</p>
+                </li>
+                <li class="inner-box">
+                    <em>3</em>
+                    <p class="txt">아래 인증번호 12자리를 PC 화면에 입력 후 <strong>&apos;공동인증서 내보내기&apos;</strong> 버튼을 클릭하세요</p>
+                    <div class="box-guide-wrap type-rnd">
+                        <p class="tit">인증번호</p>
+                        <p class="info-signnum mt-5"><span>0914 - 0344 - 1064</span></p>
+                        <div class="btn-wrap mt-20">
+                            <button type="button" class="btn btn-md btn-type08"><span>새로고침</span></button>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <em>4</em>
+                    <p class="txt">아래 [<strong>인증서 가져오기</strong>] 버튼을 선택하시면 인증서 가져오기가 완료됩니다.</p>
+                </li>
+            </ol>
+        </div>
+
+        <h3 class="gTit">안내 - 박스타입</h3>
+        <h4 class="gTit">1. Type 1</h4>
+        <div class="box-guide-wrap">
+            <p class="txt">본 진단을 통해 고객님이 전세보증금반환보증(전세금안심대출보증의 전세보증금반환보증 포함)의 보증이행 청구요건을 갖추고 있으신지 확인할 수 있습니다.</p>
+            <p class="txt">아래 셀프체크리스트로 전세보증금 반환보증(전세금안심대출보증의 전세보증금 반환보증 포함)의 보증이행청구가 가능한지 확인하세요.</p>
+            <div class="noti-wrap">
+                <p class="noti-txt ref fc-red">보증채무이행 가능 여부는 실제 심사결과에 따라 달라질 수 있습니다.</p>
+            </div>
+        </div>
+
+        <h4 class="gTit">2. Type 2</h4>
+        <div class="box-guide-wrap type-rnd">
+            <p class="tit">인증번호</p>
+            <p class="info-signnum mt-5"><span>0914 - 0344 - 1064</span></p>
+            <div class="btn-wrap mt-20">
+                <button type="button" class="btn btn-md btn-type08"><span>새로고침</span></button>
+            </div>
+
+        </div>
+
+        <h3 class="gTit">Flag </h3>
+        <p class="mt-10">
+            <span>- 할인률</span>
+            <span class="flag-sale">10% 할인</span>
+        </p>
+
+        <p class="mt-10">
+            <span>- 성공</span>
+            <span class="flag-icon succ"><em class="blind">수집성공</em></span>
+        </p>
+
+        <p class="mt-5">
+            <span>- 실패</span>
+            <span class="flag-icon fail"><em class="blind">수집실패</em></span>
+        </p>
+
+        <p class="mt-10">
+            <span class="flag-fc-navy">[ 이행완료 ]</span>
+            <span class="flag-fc-red">[ 거절 ]</span>
+            <span class="flag-fc-blue">[ 심사중 ]</span>
+            <span class="flag-fc-green">[ 임시저장 ]</span>
+        </p>
+
+        <h3 class="gTit">페이징 </h3>
+        <div class="paging-wrap">
+            <button type="button" class="btn-ico btn-prev"><span class="blind">5페이지 이전으로 이동</span></button>
+            <div class="num">
+                <a href="javascript:;" aria-current="page" class="on">1</a>
+                <a href="javascript:;">2</a>
+                <a href="javascript:;">3</a>
+                <a href="javascript:;">4</a>
+                <a href="javascript:;">5</a>
+            </div>
+            <button type="button" class="btn-ico btn-next"><span class="blind">5페이지 다음으로 이동</span></button>
+        </div>
+
+        <h3 class="gTit">탭</h3>
+        <h4 class="gTit">1. 타이틀 X + BG 타입</h4>
+        <div class="tab-wrap">
+            <div class="tab-list" role="tablist">
+                <!-- 탭선택  -->
+                <ul class="type-btn">
+                    <li>
+                        <button type="button" id="tb01" class="btn-type-tab tab-btn on" role="tab" aria-selected="true"
+                            aria-controls="tabpanel_01"><span>가입중</span></button>
+                    </li>
+                    <li>
+                        <button type="button" id="tb02" class="btn-type-tab tab-btn" role="tab" aria-selected="false"
+                            aria-controls="tabpanel_02"><span>신청중</span></button>
+                    </li>
+                    <li>
+                        <button type="button" id="tb03" class="btn-type-tab tab-btn" role="tab" aria-selected="false"
+                            aria-controls="tabpanel_03"><span>해지</span></button>
+                    </li>
+                </ul>
+            </div>
+            <!-- 보증내역조회 : 가입중 (tabpanel_01) -->
+            <div class="type-bg tab-panel on" role="tabpanel" id="tabpanel_01" aria-labelledby="tb01">
+                <h3 class="blind">가입중</h3>
+                가입중
+
+
+            </div>
+            <!-- 보증내역조회 : 신청중 (tabpanel_02) -->
+            <div class="type-bg tab-panel" role="tabpanel" id="tabpanel_02" aria-labelledby="tb02">
+                <h3 class="blind">신청중</h3>
+                신청중
+
+
+            </div>
+            <!-- 보증내역조회 : 해지 (tabpanel_03) -->
+            <div class="type-bg tab-panel" role="tabpanel" id="tabpanel_03" aria-labelledby="tb03">
+                <h3 class="blind">해지</h3>
+                해지
+
+
+            </div>
+        </div>
+        <h4 class="gTit">2. 타이틀 O + BG X 타입</h4>
+        <div class="tit-wrap mt-30">
+            <div class="inner-20">
+                <h2 class="tit-type01">타이틀</h2>
+            </div>
+        </div>
+        <div class="tab-wrap">
+            <div class="tab-list" role="tablist">
+                <!-- 탭선택  -->
+                <ul class="type-btn" role="none">
+                    <li role="none">
+                        <button type="button" id="tb04" class="btn-type-tab tab-btn on" role="tab" aria-selected="true"
+                            aria-controls="tabpanel_04"><span>전세보증이행청구</span></button>
+                    </li>
+                    <li role="none">
+                        <button type="button" id="tb05" class="btn-type-tab tab-btn" role="tab" aria-selected="false"
+                            aria-controls="tabpanel_05"><span>임대보증이행청구</span></button>
+                    </li>
+                </ul>
+            </div>
+            <!-- 보증이행안내 : 전세보증이행청구 (tabpanel_01) -->
+            <div class="tab-panel on" role="tabpanel" id="tabpanel_04" aria-labelledby="tb04">
+                <h3 class="blind">전세보증이행청구</h3>
+                전세보증이행청구
+
+
+            </div>
+            <!-- 보증이행안내 : 임대보증이행청구 (tabpanel_02) -->
+            <div class="tab-panel" role="tabpanel" id="tabpanel_05" aria-labelledby="tb05">
+                <h3 class="blind">임대보증이행청구</h3>
+
+                임대보증이행청구
+
+            </div>
+        </div>
+        <h4 class="gTit">3. 버튼 타입</h4>
+        <div class="tab-wrap">
+            <div class="tab-list" role="tablist">
+                <!-- 탭선택  -->
+                <ul class="type-btn02">
+                    <li>
+                        <button type="button" id="tb06" class="tab-btn on" role="tab" aria-selected="true"
+                            aria-controls="tabpanel_06"><span>수집 및 이용내역</span></button>
+                    </li>
+                    <li>
+                        <button type="button" id="tb07" class="tab-btn" role="tab" aria-selected="false"
+                            aria-controls="tabpanel_07"><span>제3자 제공내역</span></button>
+                    </li>
+                    <li>
+                        <button type="button" id="tb08" class="tab-btn" role="tab" aria-selected="false"
+                            aria-controls="tabpanel_08"><span>처리위탁내역</span></button>
+                    </li>
+                </ul>
+                <h4 class="gTit">라디오 rdo-btn01 과 똑같은 모양이지만 탭 기능이 필요해서 (접근성 때문에 추가) </h4>
+                <ul class="type-btn-accessble">
+                    <li>
+                        <button type="button" id="a" class="tab-btn tab-btn-accessble on" role="tab"
+                            aria-selected="true" aria-controls="tabpanel_06"><span>수집 및 이용내역</span></button>
+                    </li>
+                    <li>
+                        <button type="button" id="b" class="tab-btn tab-btn-accessble" role="tab" aria-selected="false"
+                            aria-controls="tabpanel_07"><span>제3자 제공내역</span></button>
+                    </li>
+                    <li>
+                        <button type="button" id="c" class="tab-btn tab-btn-accessble" role="tab" aria-selected="false"
+                            aria-controls="tabpanel_08"><span>처리위탁내역</span></button>
+                    </li>
+                </ul>
+            </div>
+            <!-- 전세보증이행청구 (tabpanel_06) -->
+            <div class="tab-panel on" role="tabpanel" id="tabpanel_06" aria-labelledby="tb06">
+                <h3 class="blind">수집 및 이용내역</h3>
+                수집 및 이용내역
+
+            </div>
+            <!-- 제3자 제공내역 (tabpanel_07) -->
+            <div class="tab-panel" role="tabpanel" id="tabpanel_07" aria-labelledby="tb07">
+                <h3 class="blind">제3자 제공내역</h3>
+
+                제3자 제공내역
+
+            </div>
+            <!-- 처리위탁내역 (tabpanel_08) -->
+            <div class="tab-panel" role="tabpanel" id="tabpanel_08" aria-labelledby="tb08">
+                <h3 class="blind">처리위탁내역</h3>
+
+                처리위탁내역
+
+            </div>
+        </div>
+
+        <h3 class="gTit">테이블</h3>
+        <h4 class="gTit">1. 상세</h4>
+        <div class="table-wrap">
+            <table>
+                <caption>수탁업체,위탁업무목적 항목으로 구성된 처리위탁내역 내용</caption>
+                <colgroup>
+                    <col width="30%">
+                    <col >
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">수탁업체</th>
+                        <td>수탁업체명</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">위탁업무목적</th>
+                        <td>목적 상세내용</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <h3 class="gTit">결과메세지</h3>
+        <h4 class="gTit">1. 완료</h4>
+        <div class="result-wrap">
+            <p class="res-msg-tit succ-type01">서류심사가 시작됩니다.</p>
+            <p class="res-msg-txt">심사 진행 중 자료 보완을 요청할 수 있습니다.</p>
+        </div>
+        <div class="result-wrap">
+            <p class="res-msg-tit succ-type02">보증료결제 완료</p>
+            <p class="res-msg-txt">보증서 발급이 가능합니다.</p>
+        </div>
+
+        <h4 class="gTit">2. 실패</h4>
+        <div class="result-wrap">
+            <p class="res-msg-tit fail-type01">심사신청에 실패하였습니다.</p>
+            <p class="res-msg-txt">실패이유문구 노출</p>
+        </div>
+        <div class="result-wrap">
+            <p class="res-msg-tit fail-type02">결제실패</p>
+            <p class="res-msg-txt">보증료 결제를 다시 진행해주세요.</p>
+        </div>
+
+        <h4 class="gTit">3. 진행중</h4>
+        <div class="result-wrap">
+            <p class="res-msg-tit ing-type01"><em class="em-data-txt">이허그</em> 님,<br>이행청구신청 진행중입니다.<br>계속 진행하시겠습니까?</p>
+            <p class="res-msg-txt"><em class="em-red">임시저장은 10일간 유효하며 10일이 경과한 후에는 자동취소됩니다.</em></p>
+        </div>
+
+        <h4 class="gTit">4. 안내</h4>
+        <div class="result-wrap">
+            <p class="res-msg-tit noti-type01">공동인증서 등록</p>
+            <p class="res-msg-txt">
+                <span class="noti-info05">등록된 공동인증서가 없습니다.</span>
+            </p>
+            <p class="res-msg-txt">
+                안드로이드 (OS 11 이상) 보안 정책 강화에 따라 앱별로 PC에 있는 공동인증서를 복사 후 등록하실 수 있습니다.
+            </p>
+        </div>
+
+        <h4 class="gTit">툴팁</h4>
+        <div class="tooltip-wrap">
+            툴팁화살표가 왼쪽일 때 사용
+            <button type="button" class="btn btn-ico ico-help03">
+                <span class="blind">도움말 보기</span>
+            </button>
+
+            <div class="tooltip left">
+                <span class="tooltip-txt">
+                    민간임대주택법에 따른 등록 임대주택 여부 및 임대보증 가입 여부
+                </span>
+                <button type="button" class="btn btn-ico btn-close"><span class="blind">툴팁 닫기</span></button>
+            </div>
+        </div>
+
+        <div class="tooltip-wrap" style="margin-left:40%;">
+            툴팁화살표가 오른쪽일 때 사용
+            <button type="button" class="btn btn-ico ico-help03">
+                <span class="blind">도움말 보기</span>
+            </button>
+
+            <div class="tooltip right">
+                <span class="tooltip-txt">
+                    민간임대주택법에 따른 등록 임대주택 여부 및 임대보증 가입 여부
+                </span>
+                <button type="button" class="btn btn-ico btn-close"><span class="blind">툴팁 닫기</span></button>
+            </div>
+        </div>
+    </div>
+    <!-- //guide-wrap -->
+    <script src="../../js/common_ui.js"></script>
+
+</body>
+
+</html>

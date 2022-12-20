@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>자가진단</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<script src="../../js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <header class="header auto-hide">
+            <div class="btn-left">
+                <a href="javascript:history.go(-1);" class="btn-ico btn-back" role="button" aria-label="이전"><span class="blind">뒤로</span></a>
+            </div>
+            <h1 class="title">자가진단</h1>
+            <div class="btn-right">
+                <!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
+                <a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu"><span class="blind">전체메뉴</span></a>
+            </div>
+        </header>
+    
+        <!-- s:본문시작 -->
+        <div class="container">
+            <h2 class="blind">등기부 미결제 자가진단 본문</h2>
+            <div class="content-group pt-0">
+                
+                <!-- s:상단 결과 -->
+                <div class="result-top-wrap">
+                    <div class="inner">
+                        <h3 class="blind">자가진단 결과 본문</h3>
+                        <div class="addr-detail">
+                            <div class="tag-wrap">
+                                <div class="tag">등록임대주택</div>
+                                <!-- s:툴팁(tooltip-wrap으로 감싸기) -->
+                                <div class="tag tooltip-wrap">
+                                    임대보증금보증가입
+                                    <button type="button" class="btn btn-ico ico-help03">
+                                        <span class="blind">도움말 보기</span>
+                                    </button>
+
+                                    <div class="tooltip right">
+                                        <span class="tooltip-txt">
+                                            민간임대주택법에 따른 등록 임대주택 여부 및 임대보증 가입 여부
+                                        </span>
+                                        <button type="button" class="btn btn-ico btn-close"><span class="blind">툴팁 닫기</span></button>
+                                    </div>
+                                </div>
+                                <!-- //e:툴팁 -->
+                            </div>
+                            <p class="addr">
+                                부산광역시 연제구 거제천로225번길 
+                                25 직원숙소 2동 203호
+                            </p>
+                        </div>
+
+                        <div class="btn-wrap mt-0">
+                            <button type="button" class="btn btn-lg btn-modify"><span>대상주택 변경하기</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //e:상단 결과 -->
+
+                <div class="inner-20">
+                    <!-- s:전세 실거래가 테이블 -->
+                    <div class="tb-result mt-30">
+                        <!-- s:툴팁(tooltip-wrap으로 감싸기) -->
+                        <h4 class="title tooltip-wrap">전세 실거래가 
+                            <button type="button" class="btn btn-ico ico-help03"><span class="blind">도움말 보기</span></button>
+
+                            <div class="tooltip left">
+                                <span class="tooltip-txt">
+                                    국토교통부 실거래가 공개시스템에서 제공하는 인근 유사 주택의 실거래가
+                                </span>
+                                <button type="button" class="btn btn-ico btn-close"><span class="blind">툴팁 닫기</span></button>
+                            </div>
+                        </h4>
+                        <!-- //e:툴팁 -->
+                        <div class="table-wrap type02 pd">
+                            <table>
+                                <caption>계약일, 주소, 층, 실거래가로 구성된 전세 실거래가 내용</caption>
+                                <colgroup>
+                                    <col width="28%">
+                                    <col width="*">
+                                    <col width="56px">
+                                    <col width="22%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">계약일</th>
+                                        <th scope="col">주소</th>
+                                        <th scope="col">층<br>(전용면적)</th>
+                                        <th scope="col" class="ta-r" style="padding-right:10px;">실거래가</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022-10-12</td>
+                                        <td>거제천로 225번길25</td>
+                                        <td class="ta-c">
+                                            <span>1층</span> <br>
+                                            <span>38㎡</span>
+                                        </td>
+                                        <td class="ta-r">3억</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-10-12</td>
+                                        <td>거제천로 225번길25</td>
+                                        <td class="ta-c">2층</td>
+                                        <td class="ta-r">3억</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-10-12</td>
+                                        <td>거제천로 225번길25</td>
+                                        <td class="ta-c">5층</td>
+                                        <td class="ta-r">2억 5,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-10-12</td>
+                                        <td>거제천로 225번길25</td>
+                                        <td class="ta-c">1층</td>
+                                        <td class="ta-r">2억 6,000</td>
+                                    </tr>
+                                    <!-- s:툴팁(tooltip-wrap으로 감싸기) -->
+                                    <tr class="bottom-avg tooltip-wrap">
+                                        <td colspan="3">평균낙찰가율 
+                                            <button type="button" class="btn btn-ico ico-help03"><span class="blind">도움말 보기</span></button>
+
+                                            <div class="tooltip left">
+                                                <span class="tooltip-txt">
+                                                    인근지역 유사주택의 법원 감정가 대비 낙찰된 금액의 비율
+                                                </span>
+                                                <button type="button" class="btn btn-ico btn-close"><span class="blind">툴팁 닫기</span></button>
+                                            </div>
+                                        </td>
+                                        <td class="ta-r">70%</td>
+                                    </tr>
+                                    <!-- //e:툴팁 -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="more-info">
+                            <p class="txt">주택시세 상세 확인</p>
+                            <a href="" title="한국부동산원 부동산테크으로 이동" class="btn-linktxt type08"><span>한국부동산원 부동산테크</span></a>
+                        </div>
+                        <div class="more-info mt-5">
+                            <p class="txt">실거래가 정보</p>
+                            <a href="" title="국토교통부 실거래가 공개시스템으로 이동" class="btn-linktxt type08"><span>국토교통부 실거래가 공개시스템</span></a>
+                        </div>
+                    </div>
+                    <!-- //e:전세 실거래가 테이블 -->
+
+
+                    <!-- s:전세(임대) 입주일 / 보증금액 -->
+                    <div class="relax-result-wrap">
+                        <div class="relax-result">
+                            <h3 class="title">전세(임대) 입주일 / 보증금액</h3>
+
+                            <!-- s:입주일 보증금액 입력 -->
+                            <div class="form-wrap">
+                                <div class="form-box">
+                                    <div class="frm-tit">
+                                        <label for="frmDate">입주일 또는 입주 예정일은?</label>
+                                    </div>
+                                    <div class="frm-form">
+                                        <div class="common-input type-date">
+                                            <input type="date" id="frmDate" name="" title="입주일 또는 입주 예정일을 입력하세요." value="" data-placeholder="입주일 또는 입주 예정일은?" required="" aria-required="true">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="form-box">
+                                    <div class="frm-tit">
+                                        <label for="frmArea1">전세(임대)보증금액은?</label>
+                                    </div>
+                                    <div class="frm-form">
+                                        <div class="common-input type-unit">
+                                            <input type="tel" class="ta-r" id="frmArea1" name="item2" title="전세(임대)보증금을 입력" value="" pattern="[0-9]*" inputmode="numeric">
+                                            <em>원</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //e:입주일 보증금액 입력 -->
+                        </div>
+                    </div>
+                    <!-- //e:전세(임대) 입주일 / 보증금액 -->
+
+                    <!-- s:근저당권 설정액 / 설정일 -->
+                    <div class="relax-result-wrap">
+                        <div class="relax-result">
+                            <h3 class="title">근저당권 설정액 / 설정일</h3>
+
+                            <div class="add-list-wrap">
+                                <ul>
+                                    <li>
+                                        <!-- s:근저당권 입력 -->
+                                        <div class="form-wrap mt-0">
+                                            <div class="form-box">
+                                                <div class="frm-tit">
+                                                    <label for="frmArea2">1-1 근저당권 설정액을 입력하세요.</label>
+                                                </div>
+                                                <div class="frm-form">
+                                                    <div class="common-input type-unit">
+                                                        <input type="tel" class="ta-r" id="frmArea2" name="item2" title="근저당권 설정액을 입력" value="" pattern="[0-9]*" inputmode="numeric">
+                                                        <em>원</em>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-box">
+                                                <div class="frm-tit">
+                                                    <label for="frmDate2">1-2 근저당권 설정일을 입력하세요.</label>
+                                                </div>
+                                                <div class="frm-form">
+                                                    <div class="common-input type-date">
+                                                        <input type="date" id="frmDate2" name="" title="근저당권 설정일을 입력하세요." value="" data-placeholder="근저당권 설정일을 입력하세요." required="" aria-required="true">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button type="button" class="btn btn-lg btn-type07 mt-20 btn-add"><span>추가</span></button>
+                                        </div>
+                                        <!-- //e:근저당권 입력 -->
+                                    </li>
+                                    <li>
+                                        <!-- s:근저당권 입력 -->
+                                        <div class="form-wrap mt-0">
+                                            <div class="form-box">
+                                                <div class="frm-tit">
+                                                    <label for="frmArea2">1-1 근저당권 설정액을 입력하세요.</label>
+                                                </div>
+                                                <div class="frm-form">
+                                                    <div class="common-input type-unit">
+                                                        <input type="tel" class="ta-r" id="frmArea2" name="item2" title="근저당권 설정액을 입력" value="" pattern="[0-9]*" inputmode="numeric">
+                                                        <em>원</em>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-box">
+                                                <div class="frm-tit">
+                                                    <label for="frmDate2">1-2 근저당권 설정일을 입력하세요.</label>
+                                                </div>
+                                                <div class="frm-form">
+                                                    <div class="common-input type-date">
+                                                        <input type="date" id="frmDate2" name="" title="근저당권 설정일을 입력하세요." value="" data-placeholder="근저당권 설정일을 입력하세요." required="" aria-required="true">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="btn-flex-wrap">
+                                                <button type="button" class="btn btn-lg btn-type07 btn-add mt-20"><span>추가</span></button>
+                                                <button type="button" class="btn btn-lg btn-type07 mt-20"><span>삭제</span></button>
+                                            </div>
+                                            
+                                        </div>
+                                        <!-- //e:근저당권 입력 -->
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //e:근저당권 설정액 / 설정일 -->
+
+                    <button type="button" class="btn btn-lg btn-type10 mt-20"><span>안심전세 자가 진단</span></button>
+
+                    <div class="txt-wrap mt-20">
+                        <p class="txt">
+                            부동산등기부 갑구에 압류〮가압류〮가등기〮가처분이 있다면 위험주택으로 분류합니다. 이미 살고계신 경우라면 전문가 상담을 권해드립니다.
+                        </p>
+
+                        <div class="more-info type02">
+                            <a href="" title="1:1법률상담으로 이동" class="btn-linktxt type08"><span>1:1법률상담</span></a>
+                        </div>
+                    </div>
+
+                    <div class="txt-wrap mt-40 pb-30">
+                        <p class="txt">
+                            건출물대장에 위반건축물로 등록 된 경우 전세대출, 전세보증 가입에 제한이 있을 수 있습니다. <br>건축물대장은 누구나 무료로 발급할 수 있습니다. 확인을 권해 드립니다.
+                        </p>
+
+                        <div class="more-info type02">
+                            <a href="" title="민원24(건축물대장 발급) APP 으로 이동" class="btn-linktxt type08"><span>민원24(건축물대장 발급) APP 연결</span></a>
+                        </div>
+                    </div>
+
+
+                    <div class="relax-result-wrap">
+                        <div class="relax-result">
+                            <h3 class="title">자가진단 결과</h3>
+    
+                            <div class="warning">
+                                <p class="txt">안전하지 않습니다.</p>
+                            </div>
+
+                            <div class="txt-wrap">
+                                <p class="txt">
+                                    위반건축물입니다. 전세보증가입, 전세대출 등에 제한이 있을 수 있습니다.
+                                    <br><br>
+                                    예상되는 경매 낙찰가(2억 1,0000)를 9,000만원 초과하고 있습니다. 임대인이 돈을 돌려주지 않을 경우 손해 가능성이 있습니다.
+                                </p>
+                            </div>
+
+                            <div class="graph"></div>
+
+                            <!-- s:자가진단 결과 테이블 -->
+                            <div class="tb-result mt-20">
+                                <div class="table-wrap type02">
+                                    <table>
+                                        <caption>구분, 설정(임차)액, 순위, 배당예상액으로 구성된 자가진단 결과 내용</caption>
+                                        <colgroup>
+                                            <col width="60px">
+                                            <col width="30%">
+                                            <col width="*">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" rowspan="2">
+                                                    <div class="list-chk">
+                                                        <ul>
+                                                            <li class="chk-all">
+                                                                <div class="common-check">
+                                                                    <label>
+                                                                        <input type="checkbox" name="item1">
+                                                                        <span class="blind">전체동의</span>
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </th>
+                                                <th scope="col">구분</th>
+                                                <th scope="col">설정(임차)액</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">순위</th>
+                                                <th scope="col">배당 예상액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2" class="ta-c">
+                                                    <div class="common-check chk-list">           
+                                                        <label>
+                                                            <input type="checkbox" name="item1" aria-checked="true">
+                                                            <span class="blind">
+                                                                체크박스리스트
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="ta-c">저당권</td>
+                                                <td class="ta-c">
+                                                    1억원
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ta-c">1순위</td>
+                                                <td class="ta-c">
+                                                    1억원
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2" class="ta-c">
+                                                    <div class="common-check chk-list">           
+                                                        <label>
+                                                            <input type="checkbox" name="item1" aria-checked="true">
+                                                            <span class="blind">
+                                                                체크박스리스트
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </td>
+                                                <td class="ta-c">저당권</td>
+                                                <td class="ta-c">
+                                                    1억원
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="ta-c">1순위</td>
+                                                <td class="ta-c">
+                                                    1억원
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- //e:자가진단 결과 테이블 -->
+
+                            <div class="txt-wrap mt-20">
+                                <p class="txt type02 ta-c">
+                                    입주 시 선순위 저당권을 말소하는 <br>계약을 하셨다면
+                                </p>
+                            </div>
+                            <button type="button" class="btn btn-lg btn-type10 mt-20"><span>선순위 제외 진단</span></button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <hr>
+
+                <div class="inner-20">
+                    <button type="button" class="btn btn-lg btn-type07 mt-40"><span>평가하기</span></button>
+
+                    <div class="txt-wrap mt-30 pb-30 mb-30">
+                        <p class="txt type02">
+                            천원 결제 후 부동산 등기사항 조회∙분석을 통한 안심진단을 원하시면 <span class="fc-black">[등기부 결제 후 자가진단]</span>를 눌러주세요.
+                            <br><br>
+                            대상 주택의 매매시세가 없거나 등기사항 조회가 되지 않는 경우 <span class="fc-black">[등기부 결제 후 자가진단]</span>버튼이 비활성화 됩니다.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //e:본문시작 -->
+
+        <div class="footer auto-hide footer-up">
+            <button type="button" class="btn btn-float type02 btn-secondary">등기부 결제 후 <br>자가진단</button>				
+            <button type="button" class="btn btn-float type02 btn-primary">확인</button>				
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+		//<![CDATA[ 
+		$(function () {
+            
+		});
+		//]]>
+	</script>
+
+
+	<script src="../../js/common_ui.js"></script>
+</body>
+
+</html>

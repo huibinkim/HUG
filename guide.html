@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<title>모바일HUG Worksheet</title>
+	<link rel="stylesheet" href="./_guide.css">
+	<style>
+		/* User style */ nav a { letter-spacing: -1px; } 
+		.date { text-align: center; }
+		.del { text-decoration: line-through; color: #999 !important; } .del td { background-color: #eee !important; } .del:hover *, .del a { color: #999 !important; text-decoration: none !important; }
+		.line td { border-top: 2px solid #ddd !important; }
+		.emb { display: block; color: red; } .cf { display: block; color: green; background: #2bb8e221; } 
+		.bg td { background-color: #eee !important; color: #aaa !important; } .bg td a { color: #aaa !important; } 
+		.lineth td a { color: #c6c8c4 !important; } .lineth td.nolineth { text-decoration: inherit !important; } .lineth td { text-decoration: line-through; color: #c6c8c4 !important; } .lineth td a { color: #c6c8c4 !important; } .lineth td.nolineth { text-decoration: inherit !important; color: #c6c8c4 !important; }
+		 .nolink td { color: #c6c8c4 !important; } .nolink td a { text-decoration: inherit !important; color: #c6c8c4 !important; } 
+		 .d { display: block; margin-top: 3px; color: #222; background: rgb(246, 124, 90); }
+		  .blue { color: rgb(98, 134, 242) !important } .red { color: rgb(247, 132, 9) }
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<h1><em>나눔솔루션_안심전세</em>, Web Publisher Worksheet</h1>
+	</header>
+	<!-- noticeWrap -->
+	<section class="noticeWrap">
+		<h2>Notice</h2>
+		<ul>
+			<li>Undone 0: HTML 작업중</li>
+			<li>Done 1: HTML 작업완료</li>
+			<li>Modify 2: 완료 후 HTML 수정</li>
+			<li>Delete 3: 완료 후 SB 삭제</li>
+		</ul>
+	</section>
+	<section>
+		<p class="blue" style="font-size:16px">★ 파일마다 title, blind 내용 및 일부 화면이 실제 적용된 것과 다를 수 있습니다.</p>
+		<p class="blue" style="font-size:16px">★ popup은 예제처럼 불러오는 엘리먼트에 id 를 주고 LayerPopup.open(classname,this); 해야 합니다. 스타일 가이드를 꼭 참고해주세요.</p>
+	</section>
+	<!-- //noticeWrap -->
+
+	<a href="#" class="topLk">TOP</a>
+
+	<!-- filterWrap -->
+	<section class="filterWrap">
+		<h2>Task Key/Filter</h2>
+		<form action="/">
+			<fieldset>
+				<legend>Filter option(It'll be automatically applied)</legend>
+				<label><input type="checkbox" value="all">All</label>
+				<label><input type="checkbox"><b>0</b><i>Undone</i></label>
+				<label><input type="checkbox"><b>1</b><i>Done</i></label>
+				<label><input type="checkbox"><b>2</b><i>Modify</i></label>
+				<label><input type="checkbox"><b>3</b><i>Delete</i></label>
+			</fieldset>
+		</form>
+	</section>
+	<!-- //filterWrap -->
+
+	<!-- Worksheet -->
+	<section>
+		<h2>Worksheet: Front</h2>
+		<h3>스타일가이드</h3>
+		<table>
+			<!-- caption : 경로입력 -->
+			<caption>./html/_guide</caption>
+			<thead>
+				<tr>
+					<th scope="col" class="menuDepth">Depth1</th>
+					<th scope="col" class="menuDepth">Depth2</th>
+					<th scope="col" class="menuDepth">Depth3</th>
+					<th scope="col" class="menuDepth">Depth4</th>
+					<th scope="col" class="menuDepth">Depth5</th>
+					<th scope="col" class="fileName">File Name/ID</th>
+					<th scope="col" class="dueDate">Done/Modify</th>
+					<th scope="col" class="people">People</th>
+					<th scope="col" class="issueMemo">Issue/Memo</th>
+					<th scope="col" class="checkTask">Task</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="menuDepth">Guide</td>
+					<td class="menuDepth">contents</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_contents.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">button</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_button.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">form</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_form.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">sample</td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_form_sample.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">list</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_list.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">layout</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_layout.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">
+					</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">popup</td>
+					<td class="menuDepth">기본(alert/confirm)</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_popup.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">레이어팝업</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">바텀 기본</td>
+					<td class="menuDepth">짧은 [P]</td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_popup_btm.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">(바텀팝업)<br><span class="blue">가운데정렬</span></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">바텀 안내</td>
+					<td class="menuDepth">타이틀+내용 [P]</td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_popup_btm_noti.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">(바텀팝업)<br><span class="blue">왼쪽정렬, 컨텐츠영역 scroll됨</span></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">타이틀 없음+내용 [P]</td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_popup_btm_noti2.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">(바텀팝업)<br><span class="blue">왼쪽정렬</span>					</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">우측슬라이드 [P]</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_popup_slide.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">					
+					</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">전체페이지 [P]</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_popup_page.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">(풀팝업)</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">토스트메세지</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">guide_popup_tmsg.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h3>안심전세_NEW</h3>
+		<table>
+			<!-- caption : 경로입력 -->
+			<caption>./html/01_MH_MA</caption>
+			<thead>
+				<tr>
+					<th scope="col" class="menuDepth">Depth1</th>
+					<th scope="col" class="menuDepth">Depth2</th>
+					<th scope="col" class="menuDepth">Depth3</th>
+					<th scope="col" class="menuDepth">Depth4</th>
+					<th scope="col" class="menuDepth">Depth5</th>
+					<th scope="col" class="fileName">File Name/ID</th>
+					<th scope="col" class="dueDate">Done/Modify</th>
+					<th scope="col" class="people">People</th>
+					<th scope="col" class="issueMemo">Issue/Memo</th>
+					<th scope="col" class="checkTask">Task</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="menuDepth">메인</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHMA_01000000.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">로고 추가</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">PU주소검색</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHCP_02000000.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">PU평가하기</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHCP_03000000.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">안심전세 진단하기</td>
+					<td class="menuDepth">데이터 있는 경우</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHSD_01000000.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">툴팁 화면 공유</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">데이터 없는 경우</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHSD_01000001.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">툴팁 화면 공유</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">등기부 결제 없이 자가진단</td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHSD_01000002.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">툴팁 화면 공유</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">등기부 결제 없이 자가진단 결과</td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHSD_01000003.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">결제안내 및 정보제공 동의</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHSD_01010001.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">결제자 정보 타이틀 문구 수정 및 이름 인풋 생성?</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">결제수단 선택</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHSD_01010002.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">결제승인</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHSD_01010003.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">안심전세 진단</td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHSD_01010100.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">에러문구 추가 <br>툴팁 화면 공유</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">안심전세 진단 결과</td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHSD_01010101.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo">화면 추가 <br>툴팁 화면 공유</td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">1:1 법률상담</td>
+					<td class="menuDepth">상담 안내 및 상담자 정보 제공</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHMC_01000000.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">법률사례</td>
+					<td class="menuDepth"></td>
+					<td class="fileName">MHMC_01010000.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">상세보기</td>
+					<td class="fileName">MHMC_01010100.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">상담신청</td>
+					<td class="fileName">MHMC_01010101.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">1</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">마이페이지</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">HGMP_01000000.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">0</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">정보수정</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">HGMP_02000000.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">0</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">안심전세 진단 내역관리</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">HGMP_03000000.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">0</td>
+				</tr>
+				<tr>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth">1:1 법률 상담 내역관리</td>
+					<td class="menuDepth"></td>
+					<td class="menuDepth"></td>
+					<td class="fileName">HGMP_04000000.html</td>
+					<td class="date"></td>
+					<td class="people"></td>
+					<td class="issueMemo"></td>
+					<td class="checkTask">0</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<script src="./_guide.js"></script>
+	<script>
+		/* User script(setting) */
+		$(function () {
+			$('body').feWorksheet({
+				// Options
+			});
+		});
+	</script>
+
+</body>
+
+</html>

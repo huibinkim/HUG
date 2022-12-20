@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>안심전세 진단</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<script src="../../js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <header class="header auto-hide">
+            <div class="btn-left">
+                <a href="javascript:history.go(-1);" class="btn-ico btn-back" role="button" aria-label="이전"><span class="blind">뒤로</span></a>
+            </div>
+            <h1 class="title">안심전세 진단</h1>
+            <div class="btn-right">
+                <!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
+                <a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu"><span class="blind">전체메뉴</span></a>
+            </div>
+        </header>
+    
+        <!-- s:본문시작 -->
+        <div class="container footer-up">
+            <h2 class="blind">안심전세 진단 - 대상 주택, 임대보증금, 입주(예정)일</h2>
+    
+            <div class="content-group">
+                <div class="inner-20">
+                    <div class="content-wrap">
+    
+                        <!-- s:진단 입력 -->
+                        <div class="form-wrap mt-0">
+    
+                            <div class="form-box">
+                                <div class="frm-tit">
+                                    <label for="frmAddr">대상 주택</label>
+                                </div>
+                                <div class="frm-form">
+                                    <div class="common-input">
+                                        <input type="text" id="frmAddr" name="" value="주택도시보증공사 직원숙소 203호" disabled="">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="form-box">
+                                <div class="frm-tit">
+                                    <label for="frmArea1">임대보증금을 입력하세요</label>
+                                </div>
+                                <div class="frm-form">
+                                    <div class="common-input type-unit">
+                                        <input type="tel" class="ta-r" id="frmArea1" name="item2" title="임대보증금을 입력" value="" pattern="[0-9]*" inputmode="numeric">
+                                        <em>원</em>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="form-box">
+                                <div class="frm-tit">
+                                    <label for="frmDate">입주(예정)일을 입력하세요</label>
+                                </div>
+                                <div class="frm-form">
+                                    <div class="common-input type-date">
+                                        <input type="date" id="frmDate" name="" title="입주(예정)일을 입력하세요" value="" data-placeholder="입주(예정)일을 입력하세요" required="" aria-required="true">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <button type="button" class="btn btn-lg btn-type10 mt-20"><span>진단하기</span></button>
+    
+                        </div>
+                        <!-- //e:진단 입력 -->
+    
+                        <!-- s:진단 결과  -->
+                        <div class="relax-result-wrap mt-40">
+                            <div class="relax-result">
+                                <h3 class="title">진단 결과</h3>
+    
+                                <div class="warning">
+                                    <p class="txt">안전하지 않습니다.</p>
+                                </div>
+    
+                                <div class="txt-wrap">
+                                    <p class="txt">
+                                        위반건축물입니다. 전세보증가입, 전세대출 등에 제한이 있을 수 있습니다.
+                                        <br><br>
+                                        예상되는 경매 낙찰가(2억 1,0000)를 9,000만원 초과하고 있습니다. 임대인이 돈을 돌려주지 않을 경우 손해 가능성이 있습니다.
+                                    </p>
+                                </div>
+    
+                                <div class="graph">
+    
+                                </div>
+    
+                                <div class="txt-wrap">
+                                    <p class="txt type02 ta-c">
+                                        입주 시 선순위 저당권을 말소하는 <br>계약을 하셨다면
+                                    </p>
+                                </div>
+    
+                                <button type="button" class="btn btn-lg btn-type10 mt-20"><span>선순위 제외 진단</span></button>
+    
+                                <!-- s:민간 임대주택 테이블 -->
+                                <div class="tb-result">
+                                    <h4 class="title">민간 임대주택 등록 정보<span>(임대주택인 경우)</span></h4>
+                                    <div class="table-wrap">
+                                        <table>
+                                            <caption>임대종류, 임대의무기간, 주택유형, 임대사업자구분, 임대의무기간개시일, 임대등록구분으로 구성된 민간 임대주택 등록정보 내용</caption>
+                                            <colgroup>
+                                                <col width="40%">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">임대종류</th>
+                                                    <td>장기일반민간임대주택</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">임대의무기간</th>
+                                                    <td>10년</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">주택유형</th>
+                                                    <td>준주택(기숙사)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">임대사업자구분</th>
+                                                    <td>임대사업자</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">임대의무기간 <br>개시일</th>
+                                                    <td>2015-05-15</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">임대등록구분</th>
+                                                    <td>개인</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="more-info">
+                                        <p class="txt">등록 임대주택에 관한 더 자세한 정보</p>
+                                        <a href="" title="렌트홈으로 이동" class="btn-linktxt type08"><span>렌트홈 방문</span></a>
+                                    </div>
+                                </div>
+                                <!-- //e:민간 임대주택 테이블 -->
+    
+                                <!-- s:HUG 임대보증금보증 가입 정보 테이블 -->
+                                <div class="tb-result">
+                                    <h4 class="title">HUG 임대보증금보증 가입 정보(임대주택인 경우)</span></h4>
+                                    <div class="table-wrap">
+                                        <table>
+                                            <caption>임대보증금, 보증가입금액, 주택유형, 부채비율, 보증기간으로 구성되어있는 HUG 임대보증금보증 가입정보 내용</caption>
+                                            <colgroup>
+                                                <col width="40%">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">임대보증금</th>
+                                                    <td>2 억원</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">보증가입금액</th>
+                                                    <td>5000 만원</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">주택유형</th>
+                                                    <td>준주택(기숙사)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">부채비율</th>
+                                                    <td>98 %</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">보증기간</th>
+                                                    <td>2020-12-10</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="txt-wrap mt-30">
+                                        <p class="txt">
+                                            이 정보는 <em class="fc-black">보증가입 당시 임대차계약 기준</em> 입니다.이 주택의 현재 임차 조건 및 장래 보증가입 내용은 보고 계신 정보와 다를 수 있습니다.
+                                            <br><br>
+                                            보증가입 당시 <em class="fc-red">공동저당권 이 설정된</em> 주택입니다.
+                                            <br>
+                                            공동저당권이 설정된 주택은 <em class="fc-red">전세대출, 전세보증 가입에 제한</em>이 있을 수 있으니 유의바랍니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- //e:HUG 임대보증금보증 가입 정보 테이블 -->
+    
+                                <!-- s:진단내용 상세 테이블 -->
+                                <div class="tb-result">
+                                    <h4 class="title">진단내용 상세</span></h4>
+                                    <div class="table-wrap">
+                                        <table>
+                                            <caption>주소, 주택시세, 전세시세, 설정금액, 가압류가등기, 소유자, 주민등록번호, 위반건축물, 경매낙찰가율, 안전보증금으로 구성되어있는 진단내용 상세 내용</caption>
+                                            <colgroup>
+                                                <col width="40%">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">주소</th>
+                                                    <td>[집합건물] 부산광역시 연제구 거제천로 225번길 29 주택보증공사직원숙소 2층 203호</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">주택시세</th>
+                                                    <td>3 억원</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">전세시세</th>
+                                                    <td>2억 ~ 2억 3,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">설정금액</th>
+                                                    <td>1 억원</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">가압류∙가등기</th>
+                                                    <td>없음</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">소유자</th>
+                                                    <td>홍*동</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">주민등록번호</th>
+                                                    <td>150701-*******</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">소유자</th>
+                                                    <td>HOG</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">주민등록번호</th>
+                                                    <td>180471-*******</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">위반건축물</th>
+                                                    <td><span class="fc-red">등록</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">경매낙찰가율</th>
+                                                    <td>70 %</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">안전보증금</th>
+                                                    <td>1억 1,000 만원</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- //e:진단내용 상세 테이블 -->
+    
+                                <!-- s:주택정보 테이블 -->
+                                <div class="tb-result">
+                                    <h4 class="title">주택정보</span></h4>
+                                    <div class="table-wrap">
+                                        <table>
+                                            <caption>건물명, 해당층총층, 사용승인일, 대지면적, 건축면적, 연면적, 건폐율용적률, 주차대수, 건축물용도, 세대수호수로 구성되어있는 주택정보 내용</caption>
+                                            <colgroup>
+                                                <col width="40%">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">건물명</th>
+                                                    <td>주택도시보증공사직원숙소</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">해당층/총층</th>
+                                                    <td>2/6 층</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">사용승인일</th>
+                                                    <td>2015-05-28</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">대지면적</th>
+                                                    <td>300 ㎡</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">건축면적</th>
+                                                    <td>150 ㎡</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">연면적</th>
+                                                    <td>300 ㎡</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">건폐율/용적률</th>
+                                                    <td>50 % / 100 %</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">주차대수</th>
+                                                    <td>20 대</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">건축물용도</th>
+                                                    <td>기숙사</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">세대수/호수</th>
+                                                    <td>10 세대</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- //e:주택정보 테이블 -->
+                                
+                            </div>
+                        </div>
+                        <!-- //e:진단 결과 -->
+    
+                        <button type="button" class="btn btn-lg btn-type07"><span>평가하기</span></button>
+                        <button type="button" class="btn btn-lg btn-type07 mt-10"><span>보증가입 상담</span></button>
+                        <button type="button" class="btn btn-lg btn-type07 mt-10"><span>1:1법률상담</span></button>
+                        <button type="button" class="btn btn-lg btn-type07 mt-10"><span>PDF 다운로드</span></button>
+    
+                        <div class="txt-wrap pt-40 mt-20 pb-30 mb-30">
+                            <p class="txt type02">
+                                내 보증금을 안전하게 지키기 위해서 HUG 전세보증금 반환보증에 가입하거나 안전보증금 이내로 계약하길 권해드립니다.
+                            </p>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //e:본문시작 -->
+    
+        <div class="footer auto-hide footer-up">
+            <button type="button" class="btn btn-float type02 btn-secondary">등기부 결제 후<br>자가진단</button>				
+            <button type="button" class="btn btn-float btn-primary">확인</button>				
+        </div>
+    </div>
+
+
+	<script type="text/javascript">
+		//<![CDATA[ 
+		$(function () {
+            
+		});
+		//]]>
+	</script>
+
+	<script src="../../js/common_ui.js"></script>
+</body>
+
+</html>

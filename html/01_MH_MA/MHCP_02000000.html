@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>주택검색 및 조회</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<script src="../../js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <header class="header auto-hide">
+            <div class="btn-left">
+                <a href="javascript:history.go(-1);" class="btn-ico btn-back" role="button" aria-label="이전"><span class="blind">뒤로</span></a>
+            </div>
+            <h1 class="title">주택검색 및 조회</h1>
+            <div class="btn-right">
+                <!-- <button class="btn-ico btn-home" aria-label="홈"><span class="blind">홈</span></button> -->
+                <a href="javascript:;" aria-label="전체메뉴 열기" class="btn-ico btn-menu"><span class="blind">전체메뉴</span></a>
+            </div>
+        </header>
+    
+        <!-- s:본문시작 -->
+        <div class="container">
+            <h2 class="blind">주택검색 및 조회 본문</h2>
+            <div class="content-group">
+                <div class="inner-20">
+                    <div class="txt-wrap">
+                        <h3 class="tit">임차주택 찾아보기</h3>
+                    </div>
+    
+                    <div class="form-box">
+                        <div class="frm-form mt-0">
+                            <div class="common-group type-addr">
+                                <div class="common-input">
+                                    <label for="frmAddr11" class="blind">주소 추가</label>
+                                    <input type="text" id="frmAddr11" name="item1" title="주소 입력" value="" placeholder="주소를 입력하세요." disabled="">
+                                </div>
+                                <div class="common-input addr1 addr2">
+                                    <input type="text" id="frmAddr22" name="item2" title="주소 추가 입력" value="" placeholder="상세주소 (건물명,동/호수)" disabled="">
+                                    <button type="button" class="btn btn-lg btn-type01" onclick="LayerPopup.open('pop01');"><span>주소검색</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <!-- //e:본문시작 -->
+
+        <div class="footer auto-hide footer-up">				
+            <button type="button" class="btn btn-float btn-primary">조회</button>				
+        </div>
+        
+    
+        <!-- layerpop : 주소검색 -->
+        <section class="layerpop pop01 pop-page addr-pop" role="dialog" aria-hidden="true">
+            <div class="pop-wrap">
+                <div class="pop-content">
+                    <div class="pc-wrap type-page">
+                        <div class="header auto-hide">
+                            <h4 class="title ta-c">주소검색</h4>
+                            
+                            <div class="btn-right">
+                                <button type="button" class="pop-close" onclick="LayerPopup.close('pop01');">닫기</button>
+                            </div>
+                        </div>
+    
+                        <div class="pp-body type-pd0 sc-y mt-50">
+    
+                            <!-- S: 검색 -->
+                            <div class="content-group pb-0">
+                                <div class="inner-20">
+                                    <h5 class="addr-tit">검색어로 찾기 <span class="fc-red">*</span></h5>
+                                    <div class="form-wrap">
+                                        <div class="form-box">
+                                            <div class="frm-form mt-20">
+                                                <div class="common-input type-search">
+                                                    <input type="text" name="item2" title="도로명, 건물명, 지번, 초성 검색어 입력"
+                                                        placeholder="도로명, 건물명, 지번, 초성 검색">
+                                                    <button type="button" class="btn-ico"><span class="blind">검색</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="addr-info-wrap">
+                                        <div class="addr-info">
+                                            <p class="txt">건물명, 아파트명, 도로명, 지번에 대한 통합 검색이 가능합니다.</p>
+                                            
+                                            <div class="noti-list-wrap mt-0">
+                                                <ul>
+                                                    <li>예 : SC제일은행, 두산위브</li>
+                                                    <li>도로명+건물번호 (예 : 종로47, 덕릉로 73길)</li>
+                                                    <li>동/읍/면/리 +번지 (예 : 공평동 100)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <!-- s:검색 성공 시 리스트 화면 -->
+                                    <div class="addr-srh-wrap">
+                                        <div class="addr-srh">
+                                            <ul>
+                                                <li>
+                                                    <button type="button" class="addr-choice">
+                                                        <span class="blind">주소 리스트 선택</span>
+                                                        <span class="post">48400</span>
+                                                        <div class="addr-section">
+                                                            <span class="addr-tag">도로명</span>
+                                                            <span class="addr">부산 남구 문현금융로 40 (문현동,주택도시보증공사)</span>
+                                                        </div>
+                                                        <div class="addr-section">
+                                                            <span class="addr-tag type02">지번</span>
+                                                            <span class="addr">부산 남구 문현동 1229-1 ,주택도시보증공사</span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="addr-detail">
+                                                        <div class="common-combo">
+                                                            <select title="동을 선택">
+                                                                <option value="">동을 선택하세요</option>
+                                                                <option value="">1동</option>
+                                                                <option value="">2동</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="common-combo">
+                                                            <select title="층을 선택">
+                                                                <option value="">층을 선택하세요</option>
+                                                                <option value="">1층</option>
+                                                                <option value="">2층</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="common-combo">
+                                                            <select title="호를 선택">
+                                                                <option value="">호를 선택하세요</option>
+                                                                <option value="">1호</option>
+                                                                <option value="">2호</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <button type="button" class="addr-choice">
+                                                        <span class="post">48400</span>
+                                                        <div class="addr-section">
+                                                            <span class="addr-tag">도로명</span>
+                                                            <span class="addr">부산 남구 문현금융로 40 (문현동,주택도시보증공사)</span>
+                                                        </div>
+                                                        <div class="addr-section">
+                                                            <span class="addr-tag type02">지번</span>
+                                                            <span class="addr">부산 남구 문현동 1229-1 ,주택도시보증공사</span>
+                                                        </div>
+                                                    </button>
+                                                    <div class="addr-detail">
+                                                        <div class="common-combo">
+                                                            <select title="동을 선택">
+                                                                <option value="">동을 선택하세요</option>
+                                                                <option value="">1동</option>
+                                                                <option value="">2동</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="common-combo">
+                                                            <select title="층을 선택">
+                                                                <option value="">층을 선택하세요</option>
+                                                                <option value="">1층</option>
+                                                                <option value="">2층</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="common-combo">
+                                                            <select title="호를 선택">
+                                                                <option value="">호를 선택하세요</option>
+                                                                <option value="">1호</option>
+                                                                <option value="">2호</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="noti-info02">“확인” 선택 시 도로명 주소로 입력 됩니다.</p>
+                                        <div class="paging-wrap mt-20">
+                                            <button type="button" class="btn-ico btn-prev"><span class="blind">이전페이지</span></button>
+                                            <div class="num">
+                                                <a href="javascript:;" class="on">1</a>
+                                                <a href="javascript:;">2</a>
+                                                <a href="javascript:;">3</a>
+                                                <a href="javascript:;">4</a>
+                                                <a href="javascript:;">5</a>
+                                            </div>
+                                            <button type="button" class="btn-ico btn-next"><span class="blind">다음페이지</span></button>
+                                        </div>
+                                    </div>
+                                    <!-- //e:검색 성공 시 리스트 화면 -->
+    
+                                    <!-- s:검색 실패 시 화면 -->
+                                    <div class="addr-srh-wrap" style="display:none;">
+                                        <div class="addr-srh">
+                                            <p class="txt">조회되는 주소가 없어요!</p>
+                                            <p class="sub-txt">신축건물, 신규 도로명 주소는 바로 검색되지 않을 수 있습니다. <br>읍/면/리를 함께 입력하면 검색이 되지 않습니다.</p>
+                                        </div>
+                                    </div>
+                                    <!-- //e:검색 실패 시 화면 -->
+    
+                                </div>
+                            </div>
+                            <!-- E: 검색 -->
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-float btn-cancel">취소</button>
+                        <button type="button" class="btn btn-float btn-primary">확인</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- //layerpop : 주소검색 -->
+
+        
+    </div>
+
+    
+
+	<script type="text/javascript">
+		//<![CDATA[ 
+		$(function () {
+            
+            $('.addr-choice').on('click', function(){
+                $(this).next().toggleClass('active')
+            });
+		});
+		//]]>
+	</script>
+
+	<script src="../../js/common_ui.js"></script>
+</body>
+
+</html>
